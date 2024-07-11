@@ -122,7 +122,7 @@ Containers are configured using parameters passed at runtime (such as those abov
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
-| `-e DATABASE_URL=` | Database connection URL. For sqlite use `sqlite3:/config/manyfold.sqlite3`. For postgres use `postgresql://<username>:<password>@<hostname>:<port>/<db name>`. Special characters in username/password must be [URL encoded](https://en.wikipedia.org/wiki/Percent-encoding). |
+| `-e DATABASE_URL=` | Database connection URL. For sqlite use `sqlite3:/config/manyfold.sqlite3`. For postgres or mariadb use `<scheme>://<username>:<password>@<hostname>:<port>/<db name>` where <scheme> is `postgresql` or `mysql2`. Special characters in username/password must be [URL encoded](https://en.wikipedia.org/wiki/Percent-encoding). |
 | `-e REDIS_URL=` | Redis/Valkey database URL in `redis://<hostname>:<port>/<db number>` format. |
 | `-e SECRET_KEY_BASE=` | Browser session secret. Changing it will terminate all active browser sessions. |
 | `-v /config` | Persistent storage for application configuration data. |

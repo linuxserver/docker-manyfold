@@ -38,6 +38,23 @@ elif [[ ${DB_SCHEME} = "postgresql" ]]; then
             sleep 1
         fi
     done
+elif [[ ${DB_SCHEME} = "mysql2" ]]; then
+    DB_HOST=$(awk -F"@|:" '{print $4}' <<<"${DATABASE_URL}")
+    DB_PORT=$(awk -F"@|/" '{print $6}' <<<"${DATABASE_URL}")
+    if [[ ! ${DB_PORT} =~ [0-9]+ ]]; then DB_PORT=3306; fi
+    echo "Waiting for DB to be available"
+    END=$((SECONDS + 30))
+    while [[ ${SECONDS} -lt ${END} ]] && [[ -n "${DB_HOST+x}" ]]; do
+        if [[ $(/usr/bin/nc -w1 "${DB_HOST}" "${DB_PORT}" | tr -d '\0') ]]; then
+            if [[ ! -f /dbwait.lock ]]; then
+                sleep 5
+            fi
+            touch /dbwait.lock
+            break
+        else
+            sleep 1
+        fi
+    done
 else
     DATABASE_URL=sqlite3:/config/manyfold.sqlite3
     echo "**** Missing or invalid DATABASE_URL, defaulting to sqlite. ****"
@@ -46,3 +63,6 @@ fi
 cd /app/www/ || exit 1
 
 s6-setuidgid abc /usr/bin/bundle exec rails db:prepare:with_data
+
+lsiown -R abc:abc \
+    /config
