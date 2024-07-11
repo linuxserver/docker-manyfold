@@ -18,7 +18,7 @@ fi
 
 DB_SCHEME=$(awk -F":" '{print $1}' <<<"${DATABASE_URL}")
 
-if [[ ${DB_SCHEME} = "sqlite" ]]; then
+if [[ ${DB_SCHEME} = "sqlite3" ]]; then
     DB_PATH=$(awk -F":" '{print $2}' <<<"${DATABASE_URL}")
     touch "${DB_PATH}"
 elif [[ ${DB_SCHEME} = "postgresql" ]]; then
