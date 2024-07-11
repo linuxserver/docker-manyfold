@@ -16,15 +16,15 @@ if [[ -f /app/www/tmp/pids/server.pid ]]; then
     rm /app/www/tmp/pids/server.pid
 fi
 
-DB_SCHEME=$(awk -F"@|/" '{print $1}' <<<"${DATABASE_URL}")
-DB_HOST=$(awk -F"@|/" '{print $4}' <<<"${DATABASE_URL}")
+DB_SCHEME=$(awk -F":" '{print $1}' <<<"${DATABASE_URL}")
 
-if [[ -z ${DB_HOST} ]]; then
-    echo "Missing or invalid DATABASE_URL string, halting init."
-    sleep infinity
-fi
-
-if [[ ${DB_SCHEME} = "postgres" ]]; then
+if [[ ${DB_SCHEME} = "sqlite" ]]; then
+    DB_PATH=$(awk -F":" '{print $2}' <<<"${DATABASE_URL}")
+    touch "${DB_PATH}"
+elif [[ ${DB_SCHEME} = "postgresql" ]]; then
+    DB_HOST=$(awk -F"@|:" '{print $4}' <<<"${DATABASE_URL}")
+    DB_PORT=$(awk -F"@|/" '{print $6}' <<<"${DATABASE_URL}")
+    if [[ ! ${DB_PORT} =~ [0-9]+ ]]; then DB_PORT=5432; fi
     echo "Waiting for DB to be available"
     END=$((SECONDS + 30))
     while [[ ${SECONDS} -lt ${END} ]] && [[ -n "${DB_HOST+x}" ]]; do
@@ -39,8 +39,8 @@ if [[ ${DB_SCHEME} = "postgres" ]]; then
         fi
     done
 else
-    echo "Invalid database scheme, halting init."
-    sleep infinity
+    DATABASE_URL=sqlite3:/config/manyfold.sqlite3
+    echo "**** Missing or invalid DATABASE_URL, defaulting to sqlite. ****"
 fi
 
 cd /app/www/ || exit 1

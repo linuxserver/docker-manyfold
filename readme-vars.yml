@@ -19,9 +19,9 @@ param_container_name: "{{ project_name }}"
 
 param_usage_include_env: true
 param_env_vars:
-  - { env_var: "SECRET_KEY_BASE", env_value: "", desc: "Browser session secret. Changing it will break all active browser sessions."}
-  - { env_var: "REDIS_URL", env_value: "", desc: "Redis DB URL in `redis://<hostname>:<port>/<db number>` format."}
-  - { env_var: "DATABASE_URL", env_value: "", desc: "DB URL. For sqlite use `sqlite3:/config/manyfold.sqlite3`. For postgres use `postgresql://<username>:<password>@<hostname>/<db name>`. Special characters in username/password must be [URL encoded](https://en.wikipedia.org/wiki/Percent-encoding)."}
+  - { env_var: "DATABASE_URL", env_value: "", desc: "Database connection URL. For sqlite use `sqlite3:/config/manyfold.sqlite3`. For postgres use `postgresql://<username>:<password>@<hostname>:<port>/<db name>`. Special characters in username/password must be [URL encoded](https://en.wikipedia.org/wiki/Percent-encoding)."}
+  - { env_var: "REDIS_URL", env_value: "", desc: "Redis/Valkey database URL in `redis://<hostname>:<port>/<db number>` format."}
+  - { env_var: "SECRET_KEY_BASE", env_value: "", desc: "Browser session secret. Changing it will terminate all active browser sessions."}
 
 param_usage_include_ports: true
 param_ports:
@@ -34,7 +34,7 @@ param_volumes:
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
-  This container *requires* separate postgres and redis instances to run.
+  This container *requires* a separate Redis/Valkey instance to run. Sqlite is supported but we recommend an external postgresql database for better performance.
 
   To generate keys for `SECRET_KEY_BASE` run `docker run --rm -it --entrypoint /bin/bash lscr.io/linuxserver/manyfold:latest generate-secret` once for each.
 
@@ -44,4 +44,4 @@ app_setup_block: |
 
 # changelog
 changelogs:
-  - { date: "29.06.24:", desc: "Initial Release." }
+  - { date: "11.07.24:", desc: "Initial Release." }

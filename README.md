@@ -37,6 +37,7 @@ Find us at:
 [![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/manyfold.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=pulls&logo=docker)](https://hub.docker.com/r/linuxserver/manyfold)
 [![Docker Stars](https://img.shields.io/docker/stars/linuxserver/manyfold.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=stars&logo=docker)](https://hub.docker.com/r/linuxserver/manyfold)
 [![Jenkins Build](https://img.shields.io/jenkins/build?labelColor=555555&logoColor=ffffff&style=for-the-badge&jobUrl=https%3A%2F%2Fci.linuxserver.io%2Fjob%2FDocker-Pipeline-Builders%2Fjob%2Fdocker-manyfold%2Fjob%2Fmain%2F&logo=jenkins)](https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-manyfold/job/main/)
+[![LSIO CI](https://img.shields.io/badge/dynamic/yaml?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=CI&query=CI&url=https%3A%2F%2Fci-tests.linuxserver.io%2Flinuxserver%2Fmanyfold%2Flatest%2Fci-status.yml)](https://ci-tests.linuxserver.io/linuxserver/manyfold/latest/index.html)
 
 [Manyfold](https://github.com/manyfold/manyfold/)  is an open source, self-hosted web application for managing a collection of 3D models, particularly focused on 3D printing.
 
@@ -58,7 +59,7 @@ The architectures supported by this image are:
 
 ## Application Setup
 
-This container *requires* separate postgres and redis instances to run.
+This container *requires* a separate Redis/Valkey instance to run. Sqlite is supported but we recommend an external postgresql database for better performance.
 
 To generate keys for `SECRET_KEY_BASE` run `docker run --rm -it --entrypoint /bin/bash lscr.io/linuxserver/manyfold:latest generate-secret` once for each.
 
@@ -82,9 +83,9 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Etc/UTC
-      - SECRET_KEY_BASE=
-      - REDIS_URL=
       - DATABASE_URL=
+      - REDIS_URL=
+      - SECRET_KEY_BASE=
     volumes:
       - /path/to/libraries:/libraries
     ports:
@@ -100,9 +101,9 @@ docker run -d \
   -e PUID=1000 \
   -e PGID=1000 \
   -e TZ=Etc/UTC \
-  -e SECRET_KEY_BASE= \
-  -e REDIS_URL= \
   -e DATABASE_URL= \
+  -e REDIS_URL= \
+  -e SECRET_KEY_BASE= \
   -p 3214:3214 \
   -v /path/to/libraries:/libraries \
   --restart unless-stopped \
@@ -119,9 +120,9 @@ Containers are configured using parameters passed at runtime (such as those abov
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
-| `-e SECRET_KEY_BASE=` | Browser session secret. Changing it will break all active browser sessions. |
-| `-e REDIS_URL=` | Redis DB URL in `redis://<hostname>:<port>/<db number>` format. |
-| `-e DATABASE_URL=` | DB URL. For sqlite use `sqlite3:/config/manyfold.sqlite3`. For postgres use `postgresql://<username>:<password>@<hostname>/<db name>`. Special characters in username/password must be [URL encoded](https://en.wikipedia.org/wiki/Percent-encoding). |
+| `-e DATABASE_URL=` | Database connection URL. For sqlite use `sqlite3:/config/manyfold.sqlite3`. For postgres use `postgresql://<username>:<password>@<hostname>:<port>/<db name>`. Special characters in username/password must be [URL encoded](https://en.wikipedia.org/wiki/Percent-encoding). |
+| `-e REDIS_URL=` | Redis/Valkey database URL in `redis://<hostname>:<port>/<db number>` format. |
+| `-e SECRET_KEY_BASE=` | Browser session secret. Changing it will terminate all active browser sessions. |
 | `-v /libraries` | Location of your 3D model libraries. |
 
 ## Environment variables from files (Docker secrets)
@@ -285,4 +286,4 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
-* **29.06.24:** - Initial Release.
+* **11.07.24:** - Initial Release.
