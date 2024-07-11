@@ -39,9 +39,9 @@ Find us at:
 [![Jenkins Build](https://img.shields.io/jenkins/build?labelColor=555555&logoColor=ffffff&style=for-the-badge&jobUrl=https%3A%2F%2Fci.linuxserver.io%2Fjob%2FDocker-Pipeline-Builders%2Fjob%2Fdocker-manyfold%2Fjob%2Fmain%2F&logo=jenkins)](https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-manyfold/job/main/)
 [![LSIO CI](https://img.shields.io/badge/dynamic/yaml?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=CI&query=CI&url=https%3A%2F%2Fci-tests.linuxserver.io%2Flinuxserver%2Fmanyfold%2Flatest%2Fci-status.yml)](https://ci-tests.linuxserver.io/linuxserver/manyfold/latest/index.html)
 
-[Manyfold](https://github.com/manyfold/manyfold/)  is an open source, self-hosted web application for managing a collection of 3D models, particularly focused on 3D printing.
+[Manyfold](https://github.com/manyfold3d/manyfold/)  is an open source, self-hosted web application for managing a collection of 3D models, particularly focused on 3D printing.
 
-[![manyfold](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/manyfold-logo.png)](https://github.com/manyfold/manyfold/)
+[![manyfold](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/manyfold-logo.png)](https://github.com/manyfold3d/manyfold/)
 
 ## Supported Architectures
 
@@ -59,9 +59,9 @@ The architectures supported by this image are:
 
 ## Application Setup
 
-This container *requires* a separate Redis/Valkey instance to run. Sqlite is supported but we recommend an external postgresql database for better performance.
+This container *requires* a separate Redis/Valkey instance to run. Sqlite is supported but we recommend an external Postgres or MariaDB database for better performance.
 
-To generate keys for `SECRET_KEY_BASE` run `docker run --rm -it --entrypoint /bin/bash lscr.io/linuxserver/manyfold:latest generate-secret` once for each.
+To generate keys for `SECRET_KEY_BASE` you can run `docker run --rm -it --entrypoint /bin/bash lscr.io/linuxserver/manyfold:latest generate-secret`.
 
 You don't have to use `/libraries` and you're not limited to a single path, you can mount as many arbitrary paths as you like as long as you make sure the permissions match the user running the container.
 

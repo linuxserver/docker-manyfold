@@ -21,6 +21,8 @@ DB_SCHEME=$(awk -F":" '{print $1}' <<<"${DATABASE_URL}")
 if [[ ${DB_SCHEME} = "sqlite3" ]]; then
     DB_PATH=$(awk -F":" '{print $2}' <<<"${DATABASE_URL}")
     touch "${DB_PATH}"
+    lsiown -R abc:abc \
+        /config
 elif [[ ${DB_SCHEME} = "postgresql" ]]; then
     DB_HOST=$(awk -F"@|:" '{print $4}' <<<"${DATABASE_URL}")
     DB_PORT=$(awk -F"@|/" '{print $6}' <<<"${DATABASE_URL}")
@@ -63,6 +65,3 @@ fi
 cd /app/www/ || exit 1
 
 s6-setuidgid abc /usr/bin/bundle exec rails db:prepare:with_data
-
-lsiown -R abc:abc \
-    /config

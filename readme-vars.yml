@@ -2,7 +2,7 @@
 
 # project information
 project_name: manyfold
-project_url: "https://github.com/manyfold/manyfold/"
+project_url: "https://github.com/manyfold3d/manyfold/"
 project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/manyfold-logo.png"
 project_blurb: |
   [{{ project_name|capitalize }}]({{ project_url }})  is an open source, self-hosted web application for managing a collection of 3D models, particularly focused on 3D printing.
@@ -38,9 +38,9 @@ opt_param_volumes:
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
-  This container *requires* a separate Redis/Valkey instance to run. Sqlite is supported but we recommend an external postgresql database for better performance.
+  This container *requires* a separate Redis/Valkey instance to run. Sqlite is supported but we recommend an external Postgres or MariaDB database for better performance.
 
-  To generate keys for `SECRET_KEY_BASE` run `docker run --rm -it --entrypoint /bin/bash lscr.io/linuxserver/manyfold:latest generate-secret` once for each.
+  To generate keys for `SECRET_KEY_BASE` you can run `docker run --rm -it --entrypoint /bin/bash lscr.io/linuxserver/manyfold:latest generate-secret`.
 
   You don't have to use `/libraries` and you're not limited to a single path, you can mount as many arbitrary paths as you like as long as you make sure the permissions match the user running the container.
 
