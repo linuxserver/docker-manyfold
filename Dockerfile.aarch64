@@ -20,6 +20,7 @@ RUN \
     glfw \
     libarchive \
     libstdc++ \
+    mariadb-connector-c \
     mesa-gl \
     pciutils \
     postgresql16-client \
