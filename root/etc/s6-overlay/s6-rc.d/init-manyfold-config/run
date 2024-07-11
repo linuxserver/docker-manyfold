@@ -1,0 +1,48 @@
+#!/usr/bin/with-contenv bash
+# shellcheck shell=bash
+
+mkdir -p \
+    /app/www/log \
+    /app/www/tmp
+
+lsiown -R abc:abc \
+    /app/www/log \
+    /app/www/tmp
+
+printf %s "$(cat /app/www/GIT_SHA)" > /run/s6/container_environment/GIT_SHA
+
+# Remove old pid in the event of an unclean shutdown
+if [[ -f /app/www/tmp/pids/server.pid ]]; then
+    rm /app/www/tmp/pids/server.pid
+fi
+
+DB_SCHEME=$(awk -F"@|/" '{print $1}' <<<"${DATABASE_URL}")
+DB_HOST=$(awk -F"@|/" '{print $4}' <<<"${DATABASE_URL}")
+
+if [[ -z ${DB_HOST} ]]; then
+    echo "Missing or invalid DATABASE_URL string, halting init."
+    sleep infinity
+fi
+
+if [[ ${DB_SCHEME} = "postgres" ]]; then
+    echo "Waiting for DB to be available"
+    END=$((SECONDS + 30))
+    while [[ ${SECONDS} -lt ${END} ]] && [[ -n "${DB_HOST+x}" ]]; do
+        if pg_isready -h "${DB_HOST}" -p "${DB_PORT}" -q; then
+            if [[ ! -f /dbwait.lock ]]; then
+                sleep 5
+            fi
+            touch /dbwait.lock
+            break
+        else
+            sleep 1
+        fi
+    done
+else
+    echo "Invalid database scheme, halting init."
+    sleep infinity
+fi
+
+cd /app/www/ || exit 1
+
+s6-setuidgid abc /usr/bin/bundle exec rails db:prepare:with_data
