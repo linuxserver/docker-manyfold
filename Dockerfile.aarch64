@@ -19,8 +19,8 @@ RUN \
   apk add --no-cache \
     glfw \
     libarchive \
+    libstdc++ \
     mesa-gl \
-    nodejs \
     pciutils \
     postgresql16-client \
     ruby \
@@ -29,6 +29,8 @@ RUN \
     build-base \
     git \
     libffi-dev \
+    mariadb-dev \
+    nodejs \
     postgresql-dev \
     ruby-dev \
     yarn && \
@@ -65,7 +67,8 @@ RUN \
   rm -rf \
     $HOME/.bundle/cache \
     $HOME/.composer \
-    /app/www/temp/cache \
+    /app/www/node_modules/ \
+    /app/www/tmp/cache/ \
     /app/www/vendor/bundle/ruby/3.3.0/cache/* \
     /tmp/*
 
