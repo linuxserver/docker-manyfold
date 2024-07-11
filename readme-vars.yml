@@ -17,6 +17,10 @@ available_architectures:
 common_param_env_vars_enabled: true
 param_container_name: "{{ project_name }}"
 
+param_usage_include_vols: true
+param_volumes:
+  - { vol_path: "/config", vol_host_path: "/path/to/{{ project_name }}/config", desc: "Persistent storage for application configuration data." }
+
 param_usage_include_env: true
 param_env_vars:
   - { env_var: "DATABASE_URL", env_value: "", desc: "Database connection URL. For sqlite use `sqlite3:/config/manyfold.sqlite3`. For postgres use `postgresql://<username>:<password>@<hostname>:<port>/<db name>`. Special characters in username/password must be [URL encoded](https://en.wikipedia.org/wiki/Percent-encoding)."}
@@ -27,8 +31,8 @@ param_usage_include_ports: true
 param_ports:
   - { external_port: "3214", internal_port: "3214", port_desc: "Port for web frontend" }
 
-param_usage_include_vols: true
-param_volumes:
+opt_param_usage_include_vols: true
+opt_param_volumes:
   - { vol_path: "/libraries", vol_host_path: "/path/to/libraries", desc: "Location of your 3D model libraries." }
 
 # application setup block

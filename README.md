@@ -87,7 +87,8 @@ services:
       - REDIS_URL=
       - SECRET_KEY_BASE=
     volumes:
-      - /path/to/libraries:/libraries
+      - /path/to/manyfold/config:/config
+      - /path/to/libraries:/libraries #optional
     ports:
       - 3214:3214
     restart: unless-stopped
@@ -105,7 +106,8 @@ docker run -d \
   -e REDIS_URL= \
   -e SECRET_KEY_BASE= \
   -p 3214:3214 \
-  -v /path/to/libraries:/libraries \
+  -v /path/to/manyfold/config:/config \
+  -v /path/to/libraries:/libraries `#optional` \
   --restart unless-stopped \
   lscr.io/linuxserver/manyfold:latest
 ```
@@ -123,6 +125,7 @@ Containers are configured using parameters passed at runtime (such as those abov
 | `-e DATABASE_URL=` | Database connection URL. For sqlite use `sqlite3:/config/manyfold.sqlite3`. For postgres use `postgresql://<username>:<password>@<hostname>:<port>/<db name>`. Special characters in username/password must be [URL encoded](https://en.wikipedia.org/wiki/Percent-encoding). |
 | `-e REDIS_URL=` | Redis/Valkey database URL in `redis://<hostname>:<port>/<db number>` format. |
 | `-e SECRET_KEY_BASE=` | Browser session secret. Changing it will terminate all active browser sessions. |
+| `-v /config` | Persistent storage for application configuration data. |
 | `-v /libraries` | Location of your 3D model libraries. |
 
 ## Environment variables from files (Docker secrets)
