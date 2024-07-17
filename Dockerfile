@@ -17,6 +17,7 @@ ENV RAILS_ENV="production" \
 
 RUN \
   apk add --no-cache \
+    file \
     glfw \
     libarchive \
     libstdc++ \
