@@ -64,4 +64,5 @@ fi
 
 cd /app/www/ || exit 1
 
+echo "**** Running Manyfold database init. ****"
 s6-setuidgid abc /usr/bin/bundle exec rails db:prepare:with_data
