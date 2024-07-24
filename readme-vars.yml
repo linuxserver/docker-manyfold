@@ -1,0 +1,51 @@
+---
+
+# project information
+project_name: manyfold
+project_url: "https://github.com/manyfold3d/manyfold/"
+project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/manyfold-logo.png"
+project_blurb: |
+  [{{ project_name|capitalize }}]({{ project_url }})  is an open source, self-hosted web application for managing a collection of 3D models, particularly focused on 3D printing.
+project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
+
+# supported architectures
+available_architectures:
+  - { arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
+  - { arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
+
+# container parameters
+common_param_env_vars_enabled: true
+param_container_name: "{{ project_name }}"
+
+param_usage_include_vols: true
+param_volumes:
+  - { vol_path: "/config", vol_host_path: "/path/to/{{ project_name }}/config", desc: "Persistent storage for application configuration data." }
+
+param_usage_include_env: true
+param_env_vars:
+  - { env_var: "DATABASE_URL", env_value: "", desc: "Database connection URL. For sqlite use `sqlite3:/config/manyfold.sqlite3`. For postgres or mariadb use `<scheme>://<username>:<password>@<hostname>:<port>/<db name>` where <scheme> is `postgresql` or `mysql2`. Special characters in username/password must be [URL encoded](https://en.wikipedia.org/wiki/Percent-encoding)."}
+  - { env_var: "REDIS_URL", env_value: "", desc: "Redis/Valkey database URL in `redis://<hostname>:<port>/<db number>` format."}
+  - { env_var: "SECRET_KEY_BASE", env_value: "", desc: "Browser session secret. Changing it will terminate all active browser sessions."}
+
+param_usage_include_ports: true
+param_ports:
+  - { external_port: "3214", internal_port: "3214", port_desc: "Port for web frontend" }
+
+opt_param_usage_include_vols: true
+opt_param_volumes:
+  - { vol_path: "/libraries", vol_host_path: "/path/to/libraries", desc: "Location of your 3D model libraries." }
+
+# application setup block
+app_setup_block_enabled: true
+app_setup_block: |
+  This container *requires* a separate Redis/Valkey instance to run. Sqlite is supported but we recommend an external Postgres or MariaDB database for better performance.
+
+  To generate keys for `SECRET_KEY_BASE` you can run `docker run --rm -it --entrypoint /bin/bash lscr.io/linuxserver/manyfold:latest generate-secret`.
+
+  You don't have to use `/libraries` and you're not limited to a single path, you can mount as many arbitrary paths as you like as long as you make sure the permissions match the user running the container.
+
+  For more information check out the [Manyfold documentation](https://manyfold.app/get-started/).
+
+# changelog
+changelogs:
+  - { date: "23.07.24:", desc: "Initial Release." }
