@@ -58,7 +58,8 @@ elif [[ ${DB_SCHEME} = "mysql2" ]]; then
         fi
     done
 else
-    DATABASE_URL=sqlite3:/config/manyfold.sqlite3
+    export DATABASE_URL=sqlite3:/config/manyfold.sqlite3
+    printf "sqlite3:/config/manyfold.sqlite3" > /run/s6/container_environment/DATABASE_URL
     echo "**** Missing or invalid DATABASE_URL, defaulting to sqlite. ****"
 fi
 
