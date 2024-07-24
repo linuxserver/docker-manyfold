@@ -23,7 +23,7 @@ param_volumes:
 
 param_usage_include_env: true
 param_env_vars:
-  - { env_var: "DATABASE_URL", env_value: "", desc: "Database connection URL. For sqlite use `sqlite3:/config/manyfold.sqlite3`. For postgres or mariadb use `<scheme>://<username>:<password>@<hostname>:<port>/<db name>` where <scheme> is `postgresql` or `mysql2`. Special characters in username/password must be [URL encoded](https://en.wikipedia.org/wiki/Percent-encoding)."}
+  - { env_var: "DATABASE_URL", env_value: "", desc: "Database connection URL. For sqlite use `sqlite3:/config/manyfold.sqlite3`. For postgres or mariadb use `<scheme>://<username>:<password>@<hostname>:<port>/<db name>` where `<scheme>` is `postgresql` or `mysql2`. Special characters in username/password must be [URL encoded](https://en.wikipedia.org/wiki/Percent-encoding)."}
   - { env_var: "REDIS_URL", env_value: "", desc: "Redis/Valkey database URL in `redis://<hostname>:<port>/<db number>` format."}
   - { env_var: "SECRET_KEY_BASE", env_value: "", desc: "Browser session secret. Changing it will terminate all active browser sessions."}
 
