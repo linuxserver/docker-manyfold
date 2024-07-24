@@ -289,4 +289,4 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
-* **11.07.24:** - Initial Release.
+* **23.07.24:** - Initial Release.
