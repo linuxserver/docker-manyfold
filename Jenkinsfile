@@ -35,7 +35,7 @@ pipeline {
     CI_WEB='true'
     CI_PORT='3214'
     CI_SSL='false'
-    CI_DELAY='120'
+    CI_DELAY='240'
     CI_DOCKERENV='SECRET_KEY_BASE=placeholder|DATABASE_URL=sqlite3:/config/manyfold.sqlite3|DOCKER_MODS=lscr.io/linuxserver/mods:universal-redis'
     CI_AUTH=''
     CI_WEBPATH=''
