@@ -7,7 +7,7 @@ actionmailer                    7.1.4                  gem
 actionpack                      7.1.4                  gem             
 actiontext                      7.1.4                  gem             
 actionview                      7.1.4                  gem             
-activeadmin                     3.2.4                  gem             
+activeadmin                     3.2.5                  gem             
 activejob                       7.1.4                  gem             
 activejob-status                1.0.2                  gem             
 activemodel                     7.1.4                  gem             
@@ -111,7 +111,7 @@ htmlentities                    4.3.4                  gem
 hwdata-pci                      0.382-r0               apk             
 i18n                            1.14.5                 gem             
 i18n-js                         4.2.3                  gem             
-i18n_data                       1.0.0                  gem             
+i18n_data                       1.1.0                  gem             
 inherited_resources             1.14.0                 gem             
 io-console                      0.7.1                  gem             
 io-console                      0.7.2                  gem             
@@ -215,7 +215,7 @@ ostruct                         0.6.0                  gem
 pathname                        0.3.0                  gem             
 pciutils                        3.12.0-r1              apk             
 pciutils-libs                   3.12.0-r1              apk             
-pg                              1.5.7                  gem             
+pg                              1.5.8                  gem             
 polyglot                        0.3.5                  gem             
 postgresql-common               1.2-r1                 apk             
 postgresql16-client             16.3-r0                apk             
@@ -249,13 +249,13 @@ readline                        0.0.4                  gem
 readline                        8.2.10-r0              apk             
 redis                           5.3.0                  gem             
 redis-client                    0.22.2                 gem             
+reline                          0.5.10                 gem             
 reline                          0.5.7                  gem             
-reline                          0.5.9                  gem             
 request_store                   1.5.1                  gem             
 resolv                          0.3.0                  gem             
 resolv-replace                  0.1.1                  gem             
 responders                      3.1.1                  gem             
-rexml                           3.3.6                  gem             
+rexml                           3.3.7                  gem             
 rinda                           0.2.0                  gem             
 rolify                          6.0.1                  gem             
 ruby                            3.3.3-r0               apk             
@@ -287,7 +287,6 @@ stopwords-filter2               0.1.0                  gem
 string-similarity               2.1.0                  gem             
 stringio                        3.1.1                  gem             
 strscan                         3.0.9                  gem             
-strscan                         3.1.0                  gem             
 syntax_suggest                  2.0.0                  gem             
 sys-filesystem                  1.5.0                  gem             
 syslog                          0.1.2                  gem             
