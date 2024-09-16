@@ -66,7 +66,7 @@ crass                           1.0.6                  gem
 cssbundling-rails               1.4.1                  gem             
 csv                             3.2.8                  gem             
 csv                             3.3.0                  gem             
-curl                            8.9.1-r1               apk             
+curl                            8.10.0-r0              apk             
 data_migrate                    11.0.0                 gem             
 date                            3.3.4                  gem             
 delegate                        0.3.1                  gem             
@@ -139,7 +139,7 @@ libattr                         2.5.2-r0               apk
 libbsd                          0.12.2-r0              apk             
 libbz2                          1.0.8-r6               apk             
 libcrypto3                      3.3.2-r0               apk             
-libcurl                         8.9.1-r1               apk             
+libcurl                         8.10.0-r0              apk             
 libdrm                          2.4.120-r0             apk             
 libexpat                        2.6.3-r0               apk             
 libffi                          3.4.6-r0               apk             
@@ -148,7 +148,7 @@ libidn2                         2.3.7-r0               apk
 libintl                         0.22.5-r0              apk             
 libmagic                        5.45-r1                apk             
 libmd                           1.1.0-r0               apk             
-libncursesw                     6.4_p20240420-r0       apk             
+libncursesw                     6.4_p20240420-r1       apk             
 libpciaccess                    0.18.1-r0              apk             
 libpq                           16.3-r0                apk             
 libproc2                        4.0.4-r0               apk             
@@ -192,7 +192,7 @@ musl-utils                      1.2.5-r0               apk
 mutex_m                         0.2.0                  gem             
 mysql2                          0.5.6                  gem             
 nanoid                          2.0.0                  gem             
-ncurses-terminfo-base           6.4_p20240420-r0       apk             
+ncurses-terminfo-base           6.4_p20240420-r1       apk             
 net-http                        0.4.1                  gem             
 net-imap                        0.4.15                 gem             
 net-pop                         0.1.2                  gem             
