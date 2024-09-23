@@ -66,7 +66,7 @@ crass                           1.0.6                  gem
 cssbundling-rails               1.4.1                  gem             
 csv                             3.2.8                  gem             
 csv                             3.3.0                  gem             
-curl                            8.10.0-r0              apk             
+curl                            8.9.1-r2               apk             
 data_migrate                    11.0.0                 gem             
 date                            3.3.4                  gem             
 delegate                        0.3.1                  gem             
@@ -139,7 +139,7 @@ libattr                         2.5.2-r0               apk
 libbsd                          0.12.2-r0              apk             
 libbz2                          1.0.8-r6               apk             
 libcrypto3                      3.3.2-r0               apk             
-libcurl                         8.10.0-r0              apk             
+libcurl                         8.9.1-r2               apk             
 libdrm                          2.4.120-r0             apk             
 libexpat                        2.6.3-r0               apk             
 libffi                          3.4.6-r0               apk             
