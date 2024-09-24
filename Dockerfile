@@ -33,9 +33,9 @@ RUN \
     libffi-dev \
     mariadb-dev \
     nodejs \
+    npm \
     postgresql-dev \
-    ruby-dev \
-    yarn && \
+    ruby-dev && \
   echo "**** install manyfold ****" && \
   mkdir -p /app/www && \
   if [ -z ${MANYFOLD_VERSION+x} ]; then \
@@ -51,6 +51,8 @@ RUN \
     /tmp/manyfold.tar.gz -C \
     /app/www/ --strip-components=1 && \
   cd /app/www && \
+  npm install -g corepack && \
+  corepack enable && \
   yarn install && \
   gem install foreman && \
   sed -i 's/\d.\d.\d/3.3.3/' .ruby-version && \
