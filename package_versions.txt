@@ -205,7 +205,7 @@ mysql2                                0.5.6                  gem
 nanoid                                2.0.0                  gem             
 ncurses-terminfo-base                 6.4_p20240420-r1       apk             
 net-http                              0.4.1                  gem             
-net-imap                              0.4.17                 gem             
+net-imap                              0.5.0                  gem             
 net-pop                               0.1.2                  gem             
 net-protocol                          0.2.2                  gem             
 net-smtp                              0.5.0                  gem             
