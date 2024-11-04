@@ -145,7 +145,7 @@ kaminari-activerecord                 1.2.2                  gem
 kaminari-core                         1.2.2                  gem             
 kramdown                              2.4.0                  gem             
 libacl                                2.3.2-r0               apk             
-libarchive                            3.7.6-r0               apk             
+libarchive                            3.7.7-r0               apk             
 libattr                               2.5.2-r0               apk             
 libbsd                                0.12.2-r0              apk             
 libbz2                                1.0.8-r6               apk             
@@ -161,7 +161,7 @@ libmagic                              5.45-r1                apk
 libmd                                 1.1.0-r0               apk             
 libncursesw                           6.4_p20240420-r1       apk             
 libpciaccess                          0.18.1-r0              apk             
-libpq                                 16.3-r0                apk             
+libpq                                 16.4-r0                apk             
 libproc2                              4.0.4-r0               apk             
 libpsl                                0.21.5-r1              apk             
 libssl3                               3.3.2-r1               apk             
@@ -233,7 +233,7 @@ pciutils-libs                         3.12.0-r1              apk
 pg                                    1.5.8                  gem             
 polyglot                              0.3.5                  gem             
 postgresql-common                     1.2-r1                 apk             
-postgresql16-client                   16.3-r0                apk             
+postgresql16-client                   16.4-r0                apk             
 pp                                    0.5.0                  gem             
 prettyprint                           0.2.0                  gem             
 prism                                 0.19.0                 gem             
