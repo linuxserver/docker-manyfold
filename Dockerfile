@@ -36,7 +36,8 @@ RUN \
     nodejs \
     npm \
     postgresql-dev \
-    ruby-dev && \
+    ruby-dev \
+    yaml-dev && \
   echo "**** install manyfold ****" && \
   mkdir -p /app/www && \
   if [ -z ${MANYFOLD_VERSION+x} ]; then \
