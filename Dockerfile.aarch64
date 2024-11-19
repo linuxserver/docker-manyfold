@@ -30,12 +30,14 @@ RUN \
   apk add --no-cache --virtual=build-dependencies \
     build-base \
     git \
+    grep \
     libffi-dev \
     mariadb-dev \
     nodejs \
     npm \
     postgresql-dev \
-    ruby-dev && \
+    ruby-dev \
+    yaml-dev && \
   echo "**** install manyfold ****" && \
   mkdir -p /app/www && \
   if [ -z ${MANYFOLD_VERSION+x} ]; then \
@@ -55,7 +57,8 @@ RUN \
   corepack enable && \
   yarn install && \
   gem install foreman && \
-  sed -i 's/\d.\d.\d/3.3.3/' .ruby-version && \
+  RUBY=$(apk list ruby | grep -oP '.*-\K(\d\.\d\.\d)') && \
+  sed -i "s/\d.\d.\d/${RUBY}/" .ruby-version && \
   bundle config set --local deployment 'true' && \
   bundle config set --local without 'development test' && \
   bundle config force_ruby_platform true && \
