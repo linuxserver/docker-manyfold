@@ -60,7 +60,7 @@ caber                                 0.4.0                  gem
 catatonit                             0.2.0-r0               apk                           
 cgi                                   0.4.1                  gem                           
 chunky_png                            1.4.0                  gem                           
-cocooned                              2.4.0                  gem                           
+cocooned                              2.4.1                  gem                           
 concurrent-ruby                       1.3.4                  gem                           
 concurrent_ruby                       UNKNOWN                java-archive                  
 connection_pool                       2.4.1                  gem                           
