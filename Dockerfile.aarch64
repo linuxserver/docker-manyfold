@@ -11,6 +11,7 @@ LABEL maintainer="thespad"
 ENV RAILS_ENV="production" \
     NODE_ENV="production" \
     RACK_ENV="production" \
+    DOCKER_TAG=lscr.io/linuxserver/manyfold:${VERSION} \
     PORT=3214 \
     RAILS_SERVE_STATIC_FILES=true \
     APP_VERSION=${MANYFOLD_VERSION}
