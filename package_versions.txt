@@ -29,10 +29,10 @@ app                                   UNKNOWN                npm
 arbre                                 1.7.0                  gem                           
 attr_required                         1.0.2                  gem                           
 aws-eventstream                       1.3.0                  gem                           
-aws-partitions                        1.1017.0               gem                           
+aws-partitions                        1.1022.0               gem                           
 aws-sdk-core                          3.214.0                gem                           
 aws-sdk-kms                           1.96.0                 gem                           
-aws-sdk-s3                            1.176.0                gem                           
+aws-sdk-s3                            1.176.1                gem                           
 aws-sigv4                             1.10.1                 gem                           
 base64                                0.2.0                  gem           (+1 duplicate)  
 bash                                  5.2.26-r0              apk                           
@@ -75,7 +75,7 @@ cronex                                0.15.0                 gem
 cssbundling-rails                     1.4.1                  gem                           
 csv                                   3.2.8                  gem                           
 csv                                   3.3.0                  gem                           
-curl                                  8.11.0-r2              apk                           
+curl                                  8.11.1-r0              apk                           
 data_migrate                          11.2.0                 gem                           
 date                                  3.3.4                  gem                           
 date                                  3.4.1                  gem                           
@@ -135,7 +135,7 @@ io-nonblock                           0.3.0                  gem
 io-wait                               0.3.1                  gem                           
 ipaddr                                1.2.6                  gem                           
 irb                                   1.13.1                 gem                           
-irb                                   1.14.1                 gem                           
+irb                                   1.14.2                 gem                           
 jbuilder                              2.13.0                 gem                           
 jmespath                              1.6.2                  gem                           
 jq                                    1.7.1-r0               apk                           
@@ -158,7 +158,7 @@ libattr                               2.5.2-r0               apk
 libbsd                                0.12.2-r0              apk                           
 libbz2                                1.0.8-r6               apk                           
 libcrypto3                            3.3.2-r1               apk                           
-libcurl                               8.11.0-r2              apk                           
+libcurl                               8.11.1-r0              apk                           
 libdrm                                2.4.120-r0             apk                           
 libexpat                              2.6.4-r0               apk                           
 libffi                                3.4.6-r0               apk                           
@@ -187,7 +187,7 @@ libxxf86vm                            1.1.5-r6               apk
 link_header                           0.0.8                  gem                           
 linux-pam                             1.6.0-r0               apk                           
 logger                                1.6.0                  gem                           
-logger                                1.6.2                  gem                           
+logger                                1.6.3                  gem                           
 lograge                               0.14.0                 gem                           
 logstash-event                        1.2.02                 gem                           
 loofah                                2.23.1                 gem                           
@@ -225,7 +225,7 @@ netcat-openbsd                        1.226-r0               apk
 nghttp2-libs                          1.62.1-r0              apk                           
 nio4r                                 2.7.4                  gem                           
 nkf                                   0.1.3                  gem                           
-nokogiri                              1.17.1                 gem                           
+nokogiri                              1.17.2                 gem                           
 observer                              0.1.2                  gem                           
 omniauth                              2.1.2                  gem                           
 omniauth-rails_csrf_protection        1.0.2                  gem                           
@@ -269,7 +269,7 @@ rack-test                             2.1.0                  gem
 rackup                                1.0.1                  gem                           
 rails                                 7.2.2.1                gem                           
 rails-dom-testing                     2.2.0                  gem                           
-rails-html-sanitizer                  1.6.1                  gem                           
+rails-html-sanitizer                  1.6.2                  gem                           
 rails-i18n                            7.0.10                 gem                           
 rails-settings-cached                 2.9.6                  gem                           
 rails_performance                     1.4.1                  gem                           
@@ -277,7 +277,7 @@ railties                              7.2.2.1                gem
 rake                                  13.2.1                 gem                           
 ransack                               4.2.1                  gem                           
 rdf                                   3.3.2                  gem                           
-rdoc                                  6.8.1                  gem                           
+rdoc                                  6.9.0                  gem                           
 readline                              0.0.4                  gem                           
 readline                              8.2.10-r0              apk                           
 redis                                 5.3.0                  gem                           
@@ -299,7 +299,7 @@ ruby2_keywords                        0.0.5                  gem           (+1 d
 rubyzip                               2.3.2                  gem                           
 scanelf                               1.3.7-r2               apk                           
 securerandom                          0.3.1                  gem                           
-securerandom                          0.4.0                  gem                           
+securerandom                          0.4.1                  gem                           
 set                                   1.1.0                  gem                           
 shadow                                4.15.1-r0              apk                           
 shellwords                            0.2.0                  gem                           
