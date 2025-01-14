@@ -3,4 +3,4 @@
 
 exec \
     s6-notifyoncheck -d -n 300 -w 1000 -c "nc -z localhost 3214" \
-    cd /app/www s6-setuidgid abc foreman start
+        cd /app/www s6-setuidgid abc foreman start
