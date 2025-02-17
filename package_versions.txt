@@ -24,8 +24,8 @@ aes_key_wrap                          1.1.0             gem
 alpine-baselayout                     3.6.8-r1          apk                           
 alpine-baselayout-data                3.6.8-r1          apk                           
 alpine-keys                           2.5-r0            apk                           
-alpine-release                        3.21.2-r0         apk                           
-apk-tools                             2.14.6-r2         apk                           
+alpine-release                        3.21.3-r0         apk                           
+apk-tools                             2.14.6-r3         apk                           
 app                                   UNKNOWN           npm                           
 arbre                                 1.7.0             gem                           
 attr_required                         1.0.2             gem                           
@@ -76,7 +76,7 @@ cronex                                0.15.0            gem
 cssbundling-rails                     1.4.1             gem                           
 csv                                   3.2.8             gem                           
 csv                                   3.3.0             gem                           
-curl                                  8.12.0-r0         apk                           
+curl                                  8.12.1-r0         apk                           
 data_migrate                          11.2.0            gem                           
 date                                  3.3.4             gem                           
 date                                  3.4.1             gem                           
@@ -162,7 +162,7 @@ libattr                               2.5.2-r2          apk
 libbsd                                0.12.2-r0         apk                           
 libbz2                                1.0.8-r6          apk                           
 libcrypto3                            3.3.3-r0          apk                           
-libcurl                               8.12.0-r0         apk                           
+libcurl                               8.12.1-r0         apk                           
 libdrm                                2.4.123-r1        apk                           
 libelf                                0.191-r0          apk                           
 libexpat                              2.6.4-r0          apk                           
@@ -218,7 +218,7 @@ mittsu-mesh_analysis                  0.1.0             gem
 msgpack                               1.7.2             gem                           
 multi_json                            1.15.0            gem                           
 musl                                  1.2.5-r9          apk                           
-musl-utils                            1.2.5-r8          apk                           
+musl-utils                            1.2.5-r9          apk                           
 mutex_m                               0.2.0             gem                           
 mysql2                                0.5.6             gem                           
 nanoid                                2.0.0             gem                           
@@ -344,7 +344,7 @@ to_regexp                             0.2.1             gem
 treetop                               1.6.12            gem                           
 tsort                                 0.2.0             gem                           
 tus-server                            2.3.0             gem                           
-tzdata                                2024b-r1          apk                           
+tzdata                                2025a-r0          apk                           
 tzinfo                                2.0.6             gem                           
 un                                    0.3.0             gem                           
 unicode                               0.4.4.5           gem                           
