@@ -174,7 +174,7 @@ libmagic                              5.46-r2           apk
 libmd                                 1.1.0-r0          apk                           
 libncursesw                           6.5_p20241006-r3  apk                           
 libpciaccess                          0.18.1-r0         apk                           
-libpq                                 17.2-r0           apk                           
+libpq                                 17.4-r0           apk                           
 libproc2                              4.0.4-r2          apk                           
 libpsl                                0.21.5-r3         apk                           
 libssl3                               3.3.3-r0          apk                           
@@ -254,7 +254,7 @@ pg_query                              6.0.0             gem
 pghero                                3.6.1             gem                           
 polyglot                              0.3.5             gem                           
 postgresql-common                     1.2-r1            apk                           
-postgresql16-client                   16.6-r0           apk                           
+postgresql16-client                   16.8-r0           apk                           
 pp                                    0.5.0             gem                           
 pp                                    0.6.2             gem                           
 prettyprint                           0.2.0             gem           (+1 duplicate)  
