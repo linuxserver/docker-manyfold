@@ -154,6 +154,7 @@ json-canonicalization                 1.0.0             gem
 json-jwt                              1.16.6            gem                           
 json-ld                               3.3.2             gem                           
 json-ld-preloaded                     3.3.1             gem                           
+json-schema                           5.1.1             gem                           
 kaminari                              1.2.2             gem                           
 kaminari-actionview                   1.2.2             gem                           
 kaminari-activerecord                 1.2.2             gem                           
@@ -271,7 +272,7 @@ puma                                  6.6.0             gem
 pundit                                2.4.0             gem                           
 raabro                                1.4.0             gem                           
 racc                                  1.8.1             gem                           
-rack                                  2.2.11            gem                           
+rack                                  2.2.12            gem                           
 rack-contrib                          2.5.0             gem                           
 rack-oauth2                           2.2.1             gem                           
 rack-protection                       3.2.0             gem                           
@@ -305,6 +306,12 @@ rexml                                 3.4.0             gem
 rinda                                 0.2.0             gem                           
 roda                                  3.87.0            gem                           
 rolify                                6.0.1             gem                           
+rspec-core                            3.13.3            gem                           
+rspec-support                         3.13.2            gem                           
+rswag                                 2.16.0            gem                           
+rswag-api                             2.16.0            gem                           
+rswag-specs                           2.16.0            gem                           
+rswag-ui                              2.16.0            gem                           
 ruby                                  3.3.6-r0          apk                           
 ruby-bundler                          2.5.23-r0         apk                           
 ruby-libs                             3.3.6-r0          apk                           
@@ -333,6 +340,7 @@ string-similarity                     2.1.0             gem
 stringio                              3.1.1             gem                           
 stringio                              3.1.5             gem                           
 strscan                               3.0.9             gem                           
+swagger-ui-dist                       5.9.4             npm                           
 swd                                   2.0.3             gem                           
 syntax_suggest                        2.0.1             gem                           
 sys-filesystem                        1.5.3             gem                           
@@ -352,7 +360,7 @@ tzinfo                                2.0.6             gem
 un                                    0.3.0             gem                           
 unicode                               0.4.4.5           gem                           
 uri                                   0.13.1            gem                           
-uri                                   1.0.2             gem                           
+uri                                   1.0.3             gem                           
 useragent                             0.16.11           gem                           
 utmps-libs                            0.1.2.3-r2        apk                           
 validate_url                          1.0.15            gem                           
