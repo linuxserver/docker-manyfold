@@ -293,7 +293,7 @@ rdoc                                  6.12.0            gem
 readline                              0.0.4             gem                           
 readline                              8.2.13-r0         apk                           
 redis                                 5.4.0             gem                           
-redis-client                          0.23.2            gem                           
+redis-client                          0.24.0            gem                           
 redis-namespace                       1.11.0            gem                           
 redlock                               2.0.6             gem                           
 reline                                0.5.10            gem                           
@@ -327,7 +327,7 @@ shrine                                3.6.0             gem
 shrine-tus                            2.1.1             gem                           
 shrine-url                            2.4.1             gem                           
 sidekiq                               7.3.9             gem                           
-sidekiq-cron                          2.1.0             gem                           
+sidekiq-cron                          2.2.0             gem                           
 sidekiq-failures                      1.0.4             gem                           
 simple_po_parser                      1.1.6             gem                           
 singleton                             0.2.0             gem                           
@@ -343,6 +343,7 @@ strscan                               3.0.9             gem
 swagger-ui-dist                       5.9.4             npm                           
 swd                                   2.0.3             gem                           
 syntax_suggest                        2.0.1             gem                           
+sys-cpu                               1.1.0             gem                           
 sys-filesystem                        1.5.3             gem                           
 syslog                                0.1.2             gem                           
 tempfile                              0.2.1             gem                           
