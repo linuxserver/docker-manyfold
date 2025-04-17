@@ -90,6 +90,7 @@ digest                                3.1.1             gem
 docs-website                          0.0.0             npm                           
 domain_name                           0.6.20240107      gem                           
 doorkeeper                            5.8.2             gem                           
+doorkeeper-i18n                       5.2.7             gem                           
 down                                  5.4.2             gem                           
 drb                                   2.2.0             gem                           
 drb                                   2.2.1             gem                           
@@ -161,6 +162,7 @@ kaminari-actionview                   1.2.2             gem
 kaminari-activerecord                 1.2.2             gem                           
 kaminari-core                         1.2.2             gem                           
 kramdown                              2.5.1             gem                           
+kramdown-parser-gfm                   1.1.0             gem                           
 libarchive                            3.7.9-r0          apk                           
 libattr                               2.5.2-r2          apk                           
 libbsd                                0.12.2-r0         apk                           
