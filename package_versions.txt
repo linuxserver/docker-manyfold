@@ -31,10 +31,10 @@ app                                   UNKNOWN           npm
 arbre                                 1.7.0             gem                           
 attr_required                         1.0.2             gem                           
 aws-eventstream                       1.3.2             gem                           
-aws-partitions                        1.1096.0          gem                           
-aws-sdk-core                          3.223.0           gem                           
-aws-sdk-kms                           1.100.0           gem                           
-aws-sdk-s3                            1.185.0           gem                           
+aws-partitions                        1.1103.0          gem                           
+aws-sdk-core                          3.224.0           gem                           
+aws-sdk-kms                           1.101.0           gem                           
+aws-sdk-s3                            1.186.1           gem                           
 aws-sigv4                             1.11.0            gem                           
 base64                                0.2.0             gem           (+1 duplicate)  
 bash                                  5.2.37-r0         apk                           
@@ -46,7 +46,7 @@ better_content_security_policy        0.1.4             gem
 bigdecimal                            3.1.5             gem                           
 bigdecimal                            3.1.9             gem                           
 bindata                               2.5.0             gem                           
-bootsnap                              1.18.4            gem                           
+bootsnap                              1.18.6            gem                           
 brakeman                              7.0.2             gem                           
 brotli-libs                           1.1.0-r2          apk                           
 browser                               6.1.0             gem                           
@@ -63,7 +63,7 @@ catatonit                             0.2.0-r0          apk
 cgi                                   0.4.2             gem                           
 chunky_png                            1.4.0             gem                           
 cocooned                              2.4.1             gem                           
-concurrent-ruby                       1.3.4             gem                           
+concurrent-ruby                       1.3.5             gem                           
 concurrent_ruby                       UNKNOWN           java-archive                  
 connection_pool                       2.5.3             gem                           
 content_disposition                   1.0.0             gem                           
@@ -149,7 +149,7 @@ job-iteration                         1.10.0            gem
 jq                                    1.7.1-r0          apk                           
 jquery-rails                          4.6.0             gem                           
 jsbundling-rails                      1.3.1             gem                           
-json                                  2.11.3            gem                           
+json                                  2.12.0            gem                           
 json                                  2.7.2             gem                           
 json-canonicalization                 1.0.0             gem                           
 json-jwt                              1.16.6            gem                           
@@ -179,7 +179,7 @@ libmagic                              5.46-r2           apk
 libmd                                 1.1.0-r0          apk                           
 libncursesw                           6.5_p20241006-r3  apk                           
 libpciaccess                          0.18.1-r0         apk                           
-libpq                                 17.4-r0           apk                           
+libpq                                 17.5-r0           apk                           
 libproc2                              4.0.4-r2          apk                           
 libpsl                                0.21.5-r3         apk                           
 libssl3                               3.3.3-r0          apk                           
@@ -192,7 +192,7 @@ libxcb                                1.16.1-r0         apk
 libxdmcp                              1.1.5-r1          apk                           
 libxext                               1.3.6-r2          apk                           
 libxfixes                             6.0.1-r4          apk                           
-libxml2                               2.13.4-r5         apk                           
+libxml2                               2.13.4-r6         apk                           
 libxshmfence                          1.3.2-r6          apk                           
 libxxf86vm                            1.1.5-r6          apk                           
 link_header                           0.0.8             gem                           
@@ -213,14 +213,13 @@ memoist                               0.16.2            gem
 mesa                                  24.2.8-r0         apk                           
 mesa-gl                               24.2.8-r0         apk                           
 mesa-glapi                            24.2.8-r0         apk                           
-method_source                         1.1.0             gem                           
 mini_mime                             1.1.5             gem                           
 mini_portile2                         2.8.8             gem                           
 minitest                              5.25.5            gem                           
 mittsu                                0.5.0             gem                           
 mittsu-3mf                            0.1.0             gem                           
 mittsu-mesh_analysis                  0.1.0             gem                           
-msgpack                               1.7.2             gem                           
+msgpack                               1.8.0             gem                           
 multi_json                            1.15.0            gem                           
 musl                                  1.2.5-r9          apk                           
 musl-utils                            1.2.5-r9          apk                           
@@ -257,9 +256,11 @@ pciutils-libs                         3.13.0-r1         apk
 pg                                    1.5.9             gem                           
 pg_query                              6.1.0             gem                           
 pghero                                3.6.2             gem                           
+phlex                                 2.2.1             gem                           
+phlex-rails                           2.2.0             gem                           
 polyglot                              0.3.5             gem                           
 postgresql-common                     1.2-r1            apk                           
-postgresql16-client                   16.8-r0           apk                           
+postgresql16-client                   16.9-r0           apk                           
 pp                                    0.5.0             gem                           
 pp                                    0.6.2             gem                           
 prettyprint                           0.2.0             gem           (+1 duplicate)  
@@ -274,12 +275,12 @@ puma                                  6.6.0             gem
 pundit                                2.5.0             gem                           
 raabro                                1.4.0             gem                           
 racc                                  1.8.1             gem                           
-rack                                  3.1.13            gem                           
+rack                                  3.1.15            gem                           
 rack-contrib                          2.5.0             gem                           
-rack-cors                             2.0.2             gem                           
+rack-cors                             3.0.0             gem                           
 rack-oauth2                           2.2.1             gem                           
 rack-protection                       4.1.1             gem                           
-rack-session                          2.1.0             gem                           
+rack-session                          2.1.1             gem                           
 rack-test                             2.2.0             gem                           
 rackup                                2.2.1             gem                           
 rails                                 8.0.2             gem                           
@@ -321,6 +322,7 @@ ruby-libs                             3.3.8-r0          apk
 ruby2_keywords                        0.0.5             gem           (+1 duplicate)  
 rubyzip                               2.4.1             gem                           
 scanelf                               1.3.8-r1          apk                           
+scoped_search                         4.2.0             gem                           
 securerandom                          0.3.1             gem                           
 securerandom                          0.4.1             gem                           
 set                                   1.1.0             gem                           
@@ -330,7 +332,7 @@ shrine                                3.6.0             gem
 shrine-tus                            2.1.1             gem                           
 shrine-url                            2.4.1             gem                           
 sidekiq                               8.0.3             gem                           
-sidekiq-cron                          2.2.0             gem                           
+sidekiq-cron                          2.3.0             gem                           
 simple_po_parser                      1.1.6             gem                           
 singleton                             0.2.0             gem                           
 skalibs-libs                          2.14.3.0-r0       apk                           
@@ -338,6 +340,7 @@ spdx                                  4.1.5             gem
 sqlite3                               2.5.0             gem                           
 sqlite3_ar_regexp                     3.0.0             gem                           
 ssl_client                            1.37.0-r12        apk                           
+stimulus-rails                        1.3.4             gem                           
 stopwords-filter2                     0.1.0             gem                           
 string-similarity                     2.1.0             gem                           
 stringio                              3.1.1             gem                           
@@ -358,6 +361,7 @@ tmpdir                                0.2.0             gem
 to_regexp                             0.2.1             gem                           
 treetop                               1.6.14            gem                           
 tsort                                 0.2.0             gem                           
+turbo-rails                           2.0.13            gem                           
 tus-server                            2.3.0             gem                           
 tzdata                                2025b-r0          apk                           
 tzinfo                                2.0.6             gem                           
@@ -368,7 +372,6 @@ uri                                   1.0.3             gem
 useragent                             0.16.11           gem                           
 utmps-libs                            0.1.2.3-r2        apk                           
 validate_url                          1.0.15            gem                           
-view_component                        3.22.0            gem                           
 warden                                1.2.9             gem                           
 warning                               1.5.0             gem                           
 weakref                               0.1.3             gem                           
