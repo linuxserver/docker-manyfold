@@ -60,7 +60,6 @@ busybox-binsh                         1.37.0-r12        apk
 c-ares                                1.34.5-r0         apk                           
 ca-certificates                       20241121-r1       apk                           
 ca-certificates-bundle                20241121-r1       apk                           
-caber                                 0.4.0             gem                           
 catatonit                             0.2.0-r0          apk                           
 cgi                                   0.4.2             gem                           
 chrome                                127.0.6533.88     binary                        
