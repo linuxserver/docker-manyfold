@@ -32,10 +32,10 @@ app                                   UNKNOWN           npm
 arbre                                 1.7.0             gem                           
 attr_required                         1.0.2             gem                           
 aws-eventstream                       1.4.0             gem                           
-aws-partitions                        1.1115.0          gem                           
-aws-sdk-core                          3.225.2           gem                           
-aws-sdk-kms                           1.104.0           gem                           
-aws-sdk-s3                            1.189.1           gem                           
+aws-partitions                        1.1118.0          gem                           
+aws-sdk-core                          3.226.0           gem                           
+aws-sdk-kms                           1.105.0           gem                           
+aws-sdk-s3                            1.190.0           gem                           
 aws-sigv4                             1.12.1            gem                           
 base64                                0.2.0             gem                           
 base64                                0.3.0             gem                           
@@ -296,7 +296,7 @@ railties                              8.0.2             gem
 rake                                  13.3.0            gem                           
 ransack                               4.3.0             gem                           
 rdf                                   3.3.2             gem                           
-rdoc                                  6.14.0            gem                           
+rdoc                                  6.14.1            gem                           
 readline                              0.0.4             gem                           
 readline                              8.2.13-r0         apk                           
 redis                                 5.4.0             gem                           
@@ -313,8 +313,8 @@ rexml                                 3.4.1             gem
 rinda                                 0.2.0             gem                           
 roda                                  3.87.0            gem                           
 rolify                                6.0.1             gem                           
-rspec-core                            3.13.3            gem                           
-rspec-support                         3.13.3            gem                           
+rspec-core                            3.13.4            gem                           
+rspec-support                         3.13.4            gem                           
 rswag                                 2.16.0            gem                           
 rswag-api                             2.16.0            gem                           
 rswag-specs                           2.16.0            gem                           
