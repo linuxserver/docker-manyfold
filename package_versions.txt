@@ -32,10 +32,10 @@ app                                   UNKNOWN           npm
 arbre                                 1.7.0             gem                           
 attr_required                         1.0.2             gem                           
 aws-eventstream                       1.4.0             gem                           
-aws-partitions                        1.1118.0          gem                           
-aws-sdk-core                          3.226.0           gem                           
+aws-partitions                        1.1120.0          gem                           
+aws-sdk-core                          3.226.1           gem                           
 aws-sdk-kms                           1.105.0           gem                           
-aws-sdk-s3                            1.190.0           gem                           
+aws-sdk-s3                            1.191.0           gem                           
 aws-sigv4                             1.12.1            gem                           
 base64                                0.2.0             gem                           
 base64                                0.3.0             gem                           
