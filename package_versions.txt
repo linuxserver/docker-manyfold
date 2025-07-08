@@ -32,10 +32,10 @@ app                                   UNKNOWN           npm
 arbre                                 1.7.0             gem                           
 attr_required                         1.0.2             gem                           
 aws-eventstream                       1.4.0             gem                           
-aws-partitions                        1.1120.0          gem                           
-aws-sdk-core                          3.226.1           gem                           
-aws-sdk-kms                           1.105.0           gem                           
-aws-sdk-s3                            1.191.0           gem                           
+aws-partitions                        1.1124.0          gem                           
+aws-sdk-core                          3.226.2           gem                           
+aws-sdk-kms                           1.106.0           gem                           
+aws-sdk-s3                            1.192.0           gem                           
 aws-sigv4                             1.12.1            gem                           
 base64                                0.2.0             gem                           
 base64                                0.3.0             gem                           
@@ -300,7 +300,7 @@ rdoc                                  6.14.1            gem
 readline                              0.0.4             gem                           
 readline                              8.2.13-r0         apk                           
 redis                                 5.4.0             gem                           
-redis-client                          0.24.0            gem                           
+redis-client                          0.25.0            gem                           
 redis-namespace                       1.11.0            gem                           
 redlock                               2.0.6             gem                           
 reline                                0.5.10            gem                           
@@ -334,7 +334,7 @@ shellwords                            0.2.0             gem
 shrine                                3.6.0             gem                           
 shrine-tus                            2.1.1             gem                           
 shrine-url                            2.4.1             gem                           
-sidekiq                               8.0.4             gem                           
+sidekiq                               8.0.5             gem                           
 sidekiq-cron                          2.3.0             gem                           
 simple_po_parser                      1.1.6             gem                           
 singleton                             0.2.0             gem                           
