@@ -21,6 +21,9 @@ RUN \
     file \
     glfw \
     imagemagick \
+    imagemagick-heic \
+    imagemagick-jpeg \
+    imagemagick-webp \
     libarchive \
     libstdc++ \
     mariadb-connector-c \
