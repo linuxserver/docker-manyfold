@@ -20,6 +20,7 @@ RUN \
   apk add --no-cache \
     file \
     glfw \
+    imagemagick \
     libarchive \
     libstdc++ \
     mariadb-connector-c \
