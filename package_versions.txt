@@ -30,6 +30,8 @@ aom-libs                              3.12.1-r0         apk
 apk-tools                             2.14.9-r2         apk                           
 app                                   UNKNOWN           npm                           
 arbre                                 1.7.0             gem                           
+assimp                                5.4.3-r0          apk                           
+assimp-libs                           5.4.3-r0          apk                           
 attr_required                         1.0.2             gem                           
 aws-eventstream                       1.4.0             gem                           
 aws-partitions                        1.1132.0          gem                           
