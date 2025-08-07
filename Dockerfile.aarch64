@@ -18,6 +18,7 @@ ENV RAILS_ENV="production" \
 
 RUN \
   apk add --no-cache \
+    assimp \
     file \
     glfw \
     imagemagick \
