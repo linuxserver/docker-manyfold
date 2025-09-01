@@ -228,8 +228,8 @@ manyfold                              0.1.0             npm
 marcel                                1.0.4             gem                           
 mariadb-connector-c                   3.3.10-r0         apk                           
 memoist                               0.16.2            gem                           
-mesa                                  25.1.8-r0         apk                           
-mesa-gl                               25.1.8-r0         apk                           
+mesa                                  25.1.9-r0         apk                           
+mesa-gl                               25.1.9-r0         apk                           
 mini_magick                           5.2.0             gem                           
 mini_mime                             1.1.5             gem                           
 mini_portile2                         2.8.9             gem                           
