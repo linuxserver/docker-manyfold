@@ -69,9 +69,11 @@ RUN \
   bundle config set --local without 'development test' && \
   bundle config force_ruby_platform true && \
   bundle install && \
+  touch db/schema.rb && \
   DATABASE_URL="nulldb://user:pass@localhost/db" \
   SECRET_KEY_BASE="placeholder" \
   bundle exec rake assets:precompile && \
+  rm db/schema.rb && \
   printf "Linuxserver.io version: ${VERSION}\nBuild-date: ${BUILD_DATE}" > /build_version && \
   echo "**** cleanup ****" && \
   yarn cache clean && \
