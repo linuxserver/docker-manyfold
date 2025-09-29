@@ -181,7 +181,7 @@ libcurl                               8.14.1-r1         apk
 libde265                              1.0.15-r1         apk                           
 libdrm                                2.4.124-r0        apk                           
 libelf                                0.193-r0          apk                           
-libexpat                              2.7.2-r0          apk                           
+libexpat                              2.7.3-r0          apk                           
 libffi                                3.4.8-r0          apk                           
 libgcc                                14.2.0-r6         apk                           
 libgomp                               14.2.0-r6         apk                           
