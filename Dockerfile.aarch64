@@ -34,6 +34,7 @@ RUN \
     ruby \
     ruby-bundler && \
   apk add --no-cache --virtual=build-dependencies \
+    assimp-dev \
     build-base \
     git \
     grep \
@@ -72,6 +73,7 @@ RUN \
   touch db/schema.rb && \
   DATABASE_URL="nulldb://user:pass@localhost/db" \
   SECRET_KEY_BASE="placeholder" \
+  APP_VERSION=${MANYFOLD_VERSION} \
   bundle exec rake assets:precompile && \
   rm db/schema.rb && \
   printf "Linuxserver.io version: ${VERSION}\nBuild-date: ${BUILD_DATE}" > /build_version && \
