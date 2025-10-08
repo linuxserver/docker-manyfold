@@ -18,7 +18,7 @@ ENV RAILS_ENV="production" \
 
 RUN \
   apk add --no-cache \
-    assimp \
+    assimp-dev \
     file \
     glfw \
     imagemagick \
@@ -34,7 +34,6 @@ RUN \
     ruby \
     ruby-bundler && \
   apk add --no-cache --virtual=build-dependencies \
-    assimp-dev \
     build-base \
     git \
     grep \

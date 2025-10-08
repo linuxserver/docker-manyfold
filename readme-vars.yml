@@ -22,7 +22,7 @@ param_usage_include_env: true
 param_env_vars:
   - {env_var: "DATABASE_URL", env_value: "", desc: "Database connection URL. For sqlite use `sqlite3:/config/manyfold.sqlite3`. For postgres or mariadb use `<scheme>://<username>:<password>@<hostname>:<port>/<db name>` where `<scheme>` is `postgresql` or `mysql2`. Special characters in username/password must be [URL encoded](https://en.wikipedia.org/wiki/Percent-encoding)."}
   - {env_var: "REDIS_URL", env_value: "", desc: "Redis/Valkey database URL in `redis://<hostname>:<port>/<db number>` format."}
-  - {env_var: "SECRET_KEY_BASE", env_value: "", desc: "Browser session secret. Changing it will terminate all active browser sessions."}
+  - {env_var: "SECRET_KEY_BASE", env_value: "", desc: "Browser session and database encryption key. If unset a random one will be generated on init, the database is locked to this key."}
 param_usage_include_ports: true
 param_ports:
   - {external_port: "3214", internal_port: "3214", port_desc: "Port for web frontend"}
@@ -84,6 +84,7 @@ init_diagram: |
   "manyfold:latest" <- Base Images
 # changelog
 changelogs:
+  - {date: "08.10.25:", desc: "Change key init to auto generate and persist."}
   - {date: "27.07.25:", desc: "Rebase to Alpine 3.22."}
   - {date: "12.01.25:", desc: "Rebase to Alpine 3.21."}
   - {date: "23.07.24:", desc: "Initial Release."}

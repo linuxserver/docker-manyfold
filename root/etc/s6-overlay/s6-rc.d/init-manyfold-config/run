@@ -1,6 +1,20 @@
 #!/usr/bin/with-contenv bash
 # shellcheck shell=bash
 
+# set secret key if unset
+SECRET_FILE="/config/secret_key_base.txt"
+if [ -n "${SECRET_KEY_BASE}" ]; then
+  echo "**** SECRET_KEY_BASE set in environment. ****"
+elif [ -f "${SECRET_FILE}" ] && [ -s "${SECRET_FILE}" ]; then
+  export SECRET_KEY_BASE=$(cat "${SECRET_FILE}" | tr -d '[:space:]')
+else
+  echo "**** SECRET_KEY_BASE not set, generating. ****"
+  KEY=$(ruby -r "securerandom" -e "puts SecureRandom.hex(64)")
+  echo "${KEY}" > "${SECRET_FILE}"
+  export SECRET_KEY_BASE="${KEY}"
+fi
+printf "%s" "${SECRET_KEY_BASE}" > /var/run/s6/container_environment/SECRET_KEY_BASE
+
 mkdir -p \
     /app/www/log \
     /app/www/tmp
