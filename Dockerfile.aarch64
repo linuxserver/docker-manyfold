@@ -20,6 +20,7 @@ RUN \
   apk add --no-cache \
     assimp-dev \
     file \
+    gcompat \
     glfw \
     imagemagick \
     imagemagick-heic \
