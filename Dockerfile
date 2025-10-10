@@ -18,8 +18,9 @@ ENV RAILS_ENV="production" \
 
 RUN \
   apk add --no-cache \
-    assimp \
+    assimp-dev \
     file \
+    gcompat \
     glfw \
     imagemagick \
     imagemagick-heic \
@@ -72,6 +73,7 @@ RUN \
   touch db/schema.rb && \
   DATABASE_URL="nulldb://user:pass@localhost/db" \
   SECRET_KEY_BASE="placeholder" \
+  APP_VERSION=${MANYFOLD_VERSION} \
   bundle exec rake assets:precompile && \
   rm db/schema.rb && \
   printf "Linuxserver.io version: ${VERSION}\nBuild-date: ${BUILD_DATE}" > /build_version && \
