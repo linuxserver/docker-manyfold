@@ -22,15 +22,13 @@ RUN \
     assimp-dev \
     file \
     gcompat \
-    glfw \
     imagemagick \
     imagemagick-heic \
     imagemagick-jpeg \
     imagemagick-webp \
+    jemalloc \
     libarchive \
-    libstdc++ \
     mariadb-connector-c \
-    mesa-gl \
     pciutils \
     postgresql16-client \
     ruby \
