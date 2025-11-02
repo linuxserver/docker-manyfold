@@ -14,22 +14,21 @@ ENV RAILS_ENV="production" \
     DOCKER_TAG=lscr.io/linuxserver/manyfold:${VERSION} \
     PORT=3214 \
     RAILS_SERVE_STATIC_FILES=true \
-    APP_VERSION=${MANYFOLD_VERSION}
+    APP_VERSION=${MANYFOLD_VERSION} \
+    HOME=/config
 
 RUN \
   apk add --no-cache \
     assimp-dev \
     file \
     gcompat \
-    glfw \
     imagemagick \
     imagemagick-heic \
     imagemagick-jpeg \
     imagemagick-webp \
+    jemalloc \
     libarchive \
-    libstdc++ \
     mariadb-connector-c \
-    mesa-gl \
     pciutils \
     postgresql16-client \
     ruby \
@@ -83,7 +82,9 @@ RUN \
     build-dependencies && \
   rm -rf \
     $HOME/.bundle/cache \
-    $HOME/.composer \
+    $HOME/.cache \
+    $HOME/.npm \
+    $HOME/.yarn \
     /app/www/node_modules/ \
     /app/www/tmp/cache/ \
     /app/www/vendor/bundle/ruby/3.3.0/cache/* \
