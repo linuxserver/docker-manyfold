@@ -61,14 +61,13 @@ ca-certificates                       20250911-r0       apk
 ca-certificates-bundle                20250911-r0       apk                           
 catatonit                             0.2.1-r0          apk                           
 cgi                                   0.4.2             gem           (+1 duplicate)  
-chrome                                127.0.6533.88     binary                        
 chunky_png                            1.4.0             gem                           
 cocooned                              2.5.0             gem                           
 concurrent-ruby                       1.3.5             gem                           
 concurrent_ruby                       UNKNOWN           java-archive                  
 connection_pool                       2.5.4             gem                           
 content_disposition                   1.0.0             gem                           
-corepack                              0.34.1            npm                           
+corepack                              0.34.2            npm                           
 coreutils                             9.7-r1            apk                           
 coreutils-env                         9.7-r1            apk                           
 coreutils-fmt                         9.7-r1            apk                           
@@ -123,7 +122,6 @@ freetype                              2.13.3-r0         apk
 fugit                                 1.11.1            gem                           
 gcompat                               1.1.0-r4          apk                           
 get_process_mem                       1.0.0             gem                           
-glfw                                  3.4-r0            apk                           
 glob                                  0.4.1             gem                           
 globalid                              1.3.0             gem                           
 gmp                                   6.3.0-r3          apk                           
@@ -154,6 +152,7 @@ ipaddr                                1.2.7             gem
 irb                                   1.14.3            gem                           
 irb                                   1.15.2            gem                           
 jbuilder                              2.14.1            gem                           
+jemalloc                              5.3.0-r6          apk                           
 jmespath                              1.6.2             gem                           
 job-iteration                         1.11.0            gem                           
 jq                                    1.8.0-r0          apk                           
@@ -180,8 +179,6 @@ libbz2                                1.0.8-r6          apk
 libcrypto3                            3.5.4-r0          apk                           
 libcurl                               8.14.1-r2         apk                           
 libde265                              1.0.15-r1         apk                           
-libdrm                                2.4.124-r0        apk                           
-libelf                                0.193-r0          apk                           
 libexpat                              2.7.3-r0          apk                           
 libffi                                3.4.8-r0          apk                           
 libgcc                                14.2.0-r6         apk                           
@@ -194,7 +191,6 @@ libltdl                               2.5.4-r1          apk
 libmagic                              5.46-r2           apk                           
 libmd                                 1.1.0-r0          apk                           
 libncursesw                           6.5_p20250503-r0  apk                           
-libpciaccess                          0.18.1-r0         apk                           
 libpng                                1.6.47-r0         apk                           
 libpq                                 17.6-r0           apk                           
 libproc2                              4.0.4-r3          apk                           
@@ -213,13 +209,10 @@ libxcb                                1.17.0-r0         apk
 libxdmcp                              1.1.5-r1          apk                           
 libxext                               1.3.6-r2          apk                           
 libxml2                               2.13.9-r0         apk                           
-libxshmfence                          1.3.3-r0          apk                           
-libxxf86vm                            1.1.6-r0          apk                           
 link_header                           0.0.8             gem                           
 linux-pam                             1.7.0-r4          apk                           
 linzer                                0.7.7             gem                           
 llhttp-ffi                            0.5.0             gem                           
-llvm20-libs                           20.1.8-r0         apk                           
 logger                                1.6.4             gem                           
 logger                                1.7.0             gem                           
 lograge                               0.14.0            gem                           
@@ -231,8 +224,6 @@ manyfold                              0.1.0             npm
 marcel                                1.1.0             gem                           
 mariadb-connector-c                   3.3.10-r0         apk                           
 memoist                               0.16.2            gem                           
-mesa                                  25.1.9-r0         apk                           
-mesa-gl                               25.1.9-r0         apk                           
 mini_magick                           5.2.0             gem                           
 mini_mime                             1.1.5             gem                           
 mini_portile2                         2.8.9             gem                           
@@ -355,7 +346,6 @@ simple_po_parser                      1.1.6             gem
 singleton                             0.3.0             gem                           
 skalibs-libs                          2.14.4.0-r0       apk                           
 spdx                                  4.1.5             gem                           
-spirv-tools                           1.4.313.0-r0      apk                           
 sqlite3                               2.5.0             gem                           
 sqlite3_ar_regexp                     3.0.0             gem                           
 ssl_client                            1.37.0-r19        apk                           
@@ -392,7 +382,6 @@ utmps-libs                            0.1.3.1-r0        apk
 validate_url                          1.0.15            gem                           
 warden                                1.2.9             gem                           
 warning                               1.5.0             gem                           
-wayland-libs-server                   1.23.1-r3         apk                           
 weakref                               0.1.3             gem                           
 webfinger                             2.1.3             gem                           
 websocket-driver                      0.8.0             gem                           
