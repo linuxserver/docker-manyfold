@@ -56,7 +56,7 @@ bundler                               2.6.2             gem
 bundler                               2.6.8             gem                           
 busybox                               1.37.0-r20        apk                           
 busybox-binsh                         1.37.0-r20        apk                           
-c-ares                                1.34.5-r0         apk                           
+c-ares                                1.34.6-r0         apk                           
 ca-certificates                       20250911-r0       apk                           
 ca-certificates-bundle                20250911-r0       apk                           
 catatonit                             0.2.1-r0          apk                           
@@ -373,7 +373,7 @@ treetop                               1.6.14            gem
 tsort                                 0.2.0             gem           (+1 duplicate)  
 turbo-rails                           2.0.20            gem                           
 tus-server                            2.3.0             gem                           
-tzdata                                2025b-r0          apk                           
+tzdata                                2025c-r0          apk                           
 tzinfo                                2.0.6             gem                           
 un                                    0.3.0             gem                           
 unicode                               0.4.4.5           gem                           
