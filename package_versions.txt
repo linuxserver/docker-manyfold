@@ -33,10 +33,10 @@ assimp-dev                            5.4.3-r0          apk
 assimp-libs                           5.4.3-r0          apk                           
 attr_required                         1.0.2             gem                           
 aws-eventstream                       1.4.0             gem                           
-aws-partitions                        1.1198.0          gem                           
-aws-sdk-core                          3.240.0           gem                           
-aws-sdk-kms                           1.118.0           gem                           
-aws-sdk-s3                            1.209.0           gem                           
+aws-partitions                        1.1200.0          gem                           
+aws-sdk-core                          3.241.0           gem                           
+aws-sdk-kms                           1.119.0           gem                           
+aws-sdk-s3                            1.210.0           gem                           
 aws-sigv4                             1.12.1            gem                           
 base64                                0.3.0             gem                           
 bash                                  5.2.37-r0         apk                           
