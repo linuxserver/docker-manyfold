@@ -84,6 +84,7 @@ init_diagram: |
   "manyfold:latest" <- Base Images
 # changelog
 changelogs:
+  - {date: "13.01.26:", desc: "Rebase to Alpine 3.23."}
   - {date: "08.10.25:", desc: "Change key init to auto generate and persist."}
   - {date: "27.07.25:", desc: "Rebase to Alpine 3.22."}
   - {date: "12.01.25:", desc: "Rebase to Alpine 3.21."}

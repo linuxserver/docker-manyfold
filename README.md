@@ -290,6 +290,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **13.01.26:** - Rebase to Alpine 3.23.
 * **08.10.25:** - Change key init to auto generate and persist.
 * **27.07.25:** - Rebase to Alpine 3.22.
 * **12.01.25:** - Rebase to Alpine 3.21.
