@@ -67,7 +67,7 @@ concurrent-ruby                       1.3.5             gem
 concurrent_ruby                       UNKNOWN           java-archive                  
 connection_pool                       2.5.5             gem                           
 content_disposition                   1.0.0             gem                           
-corepack                              0.34.5            npm                           
+corepack                              0.34.6            npm                           
 coreutils                             9.8-r1            apk                           
 coreutils-env                         9.8-r1            apk                           
 coreutils-fmt                         9.8-r1            apk                           
@@ -144,11 +144,11 @@ i18n                                  1.14.7            gem
 i18n-js                               4.2.4             gem                           
 i18n_data                             1.1.0             gem                           
 image_processing                      1.14.0            gem                           
-imagemagick                           7.1.2.12-r0       apk                           
-imagemagick-heic                      7.1.2.12-r0       apk                           
-imagemagick-jpeg                      7.1.2.12-r0       apk                           
-imagemagick-libs                      7.1.2.12-r0       apk                           
-imagemagick-webp                      7.1.2.12-r0       apk                           
+imagemagick                           7.1.2.13-r0       apk                           
+imagemagick-heic                      7.1.2.13-r0       apk                           
+imagemagick-jpeg                      7.1.2.13-r0       apk                           
+imagemagick-libs                      7.1.2.13-r0       apk                           
+imagemagick-webp                      7.1.2.13-r0       apk                           
 io-console                            0.8.1             gem           (+1 duplicate)  
 io-nonblock                           0.3.2             gem                           
 io-wait                               0.3.2             gem                           
@@ -184,7 +184,7 @@ libbz2                                1.0.8-r6          apk
 libcrypto3                            3.5.4-r0          apk                           
 libcurl                               8.17.0-r1         apk                           
 libde265                              1.0.16-r0         apk                           
-libeconf                              0.8.0-r0          apk                           
+libeconf                              0.8.3-r0          apk                           
 libexpat                              2.7.3-r0          apk                           
 libffi                                3.5.2-r0          apk                           
 libgcc                                15.2.0-r2         apk                           
@@ -198,7 +198,7 @@ libmagic                              5.46-r2           apk
 libmd                                 1.1.0-r0          apk                           
 libmount                              2.41.2-r0         apk                           
 libncursesw                           6.5_p20251123-r0  apk                           
-libpng                                1.6.53-r0         apk                           
+libpng                                1.6.54-r0         apk                           
 libpq                                 18.1-r0           apk                           
 libproc2                              4.0.5-r0          apk                           
 libpsl                                0.21.5-r3         apk                           
