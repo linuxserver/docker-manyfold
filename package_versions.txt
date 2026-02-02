@@ -23,7 +23,7 @@ aes_key_wrap                          1.1.0             gem
 alpine-baselayout                     3.7.1-r8          apk                           
 alpine-baselayout-data                3.7.1-r8          apk                           
 alpine-keys                           2.6-r0            apk                           
-alpine-release                        3.23.2-r0         apk                           
+alpine-release                        3.23.3-r0         apk                           
 altcha-rails                          0.0.6             gem                           
 aom-libs                              3.13.1-r0         apk                           
 apk-tools                             3.0.3-r1          apk                           
