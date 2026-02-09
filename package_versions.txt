@@ -47,8 +47,8 @@ benchmark                             0.5.0             gem
 better_content_security_policy        0.1.4             gem                           
 bigdecimal                            3.3.1             gem                           
 bindata                               2.5.1             gem                           
-bootsnap                              1.21.1            gem                           
-brakeman                              7.1.2             gem                           
+bootsnap                              1.22.0            gem                           
+brakeman                              8.0.2             gem                           
 brotli-libs                           1.2.0-r0          apk                           
 browser                               6.2.0             gem                           
 builder                               3.3.0             gem                           
@@ -280,7 +280,7 @@ pcre2                                 10.47-r0          apk
 pg                                    1.6.3             gem                           
 pg_query                              6.2.2             gem                           
 pghero                                3.7.0             gem                           
-phlex                                 2.4.0             gem                           
+phlex                                 2.4.1             gem                           
 phlex-rails                           2.4.0             gem                           
 pkgconf                               2.5.1-r0          apk                           
 polyglot                              0.3.5             gem                           
@@ -386,7 +386,7 @@ tmpdir                                0.3.1             gem
 to_regexp                             0.2.1             gem                           
 treetop                               1.6.18            gem                           
 tsort                                 0.2.0             gem           (+1 duplicate)  
-turbo-rails                           2.0.22            gem                           
+turbo-rails                           2.0.23            gem                           
 tus-server                            2.3.0             gem                           
 tzdata                                2025c-r0          apk                           
 tzinfo                                2.0.6             gem                           
