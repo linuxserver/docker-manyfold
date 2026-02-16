@@ -201,7 +201,7 @@ libmd                                 1.1.0-r0          apk
 libmount                              2.41.2-r0         apk                           
 libncursesw                           6.5_p20251123-r0  apk                           
 libpng                                1.6.54-r0         apk                           
-libpq                                 18.1-r0           apk                           
+libpq                                 18.2-r0           apk                           
 libproc2                              4.0.5-r0          apk                           
 libpsl                                0.21.5-r3         apk                           
 libraqm                               0.10.2-r0         apk                           
@@ -285,7 +285,7 @@ phlex-rails                           2.4.0             gem
 pkgconf                               2.5.1-r0          apk                           
 polyglot                              0.3.5             gem                           
 postgresql-common                     1.2-r2            apk                           
-postgresql16-client                   16.11-r0          apk                           
+postgresql16-client                   16.12-r0          apk                           
 pp                                    0.6.2             gem                           
 pp                                    0.6.3             gem                           
 prettyprint                           0.2.0             gem           (+1 duplicate)  
