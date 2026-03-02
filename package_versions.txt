@@ -26,7 +26,7 @@ alpine-keys                           2.6-r0            apk
 alpine-release                        3.23.3-r0         apk                           
 altcha-rails                          0.0.6             gem                           
 aom-libs                              3.13.1-r1         apk                           
-apk-tools                             3.0.4-r0          apk                           
+apk-tools                             3.0.5-r0          apk                           
 app                                   UNKNOWN           npm                           
 arel_extensions                       2.4.0             gem                           
 assimp-dev                            6.0.2-r0          apk                           
@@ -145,11 +145,11 @@ i18n                                  1.14.8            gem
 i18n-js                               4.2.4             gem                           
 i18n_data                             1.1.0             gem                           
 image_processing                      1.14.0            gem                           
-imagemagick                           7.1.2.13-r0       apk                           
-imagemagick-heic                      7.1.2.13-r0       apk                           
-imagemagick-jpeg                      7.1.2.13-r0       apk                           
-imagemagick-libs                      7.1.2.13-r0       apk                           
-imagemagick-webp                      7.1.2.13-r0       apk                           
+imagemagick                           7.1.2.15-r0       apk                           
+imagemagick-heic                      7.1.2.15-r0       apk                           
+imagemagick-jpeg                      7.1.2.15-r0       apk                           
+imagemagick-libs                      7.1.2.15-r0       apk                           
+imagemagick-webp                      7.1.2.15-r0       apk                           
 io-console                            0.8.1             gem                           
 io-console                            0.8.2             gem                           
 io-nonblock                           0.3.2             gem                           
@@ -177,7 +177,7 @@ kaminari-core                         1.2.2             gem
 kramdown                              2.5.2             gem                           
 kramdown-parser-gfm                   1.1.0             gem                           
 lcms2                                 2.17-r0           apk                           
-libapk                                3.0.4-r0          apk                           
+libapk                                3.0.5-r0          apk                           
 libarchive                            3.8.5-r0          apk                           
 libattr                               2.5.2-r2          apk                           
 libblkid                              2.41.2-r0         apk                           
