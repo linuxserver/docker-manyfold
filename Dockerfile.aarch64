@@ -44,6 +44,15 @@ RUN \
     postgresql-dev \
     ruby-dev \
     yaml-dev && \
+  echo "**** install manyfold F3D and VTK packages ****" && \
+  curl -s -o \
+    /tmp/f3d.apk -L \
+    "https://github.com/manyfold3d/f3d-alpine/releases/download/v3.4.1-r2/f3d-3.4.1-r2.aarch64.apk" && \
+  curl -s -o \
+    /tmp/vtk.apk -L \
+    "https://github.com/manyfold3d/f3d-alpine/releases/download/v3.4.1-r1/vtk-9.5.2-r0.aarch64.apk" && \
+  apk add --no-cache --allow-untrusted /tmp/f3d.apk /tmp/vtk.apk && \
+  rm /tmp/f3d.apk /tmp/vtk.apk && \
   echo "**** install manyfold ****" && \
   mkdir -p /app/www && \
   if [ -z ${MANYFOLD_VERSION+x} ]; then \
