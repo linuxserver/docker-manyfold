@@ -20,8 +20,8 @@ acts-as-taggable-on                   13.0.0            gem
 acts_as_favoritor                     6.0.2             gem                           
 addressable                           2.8.9             gem                           
 aes_key_wrap                          1.1.0             gem                           
-alpine-baselayout                     3.7.1-r8          apk                           
-alpine-baselayout-data                3.7.1-r8          apk                           
+alpine-baselayout                     3.7.2-r0          apk                           
+alpine-baselayout-data                3.7.2-r0          apk                           
 alpine-keys                           2.6-r0            apk                           
 alpine-release                        3.23.3-r0         apk                           
 altcha-rails                          0.0.6             gem                           
@@ -200,7 +200,7 @@ libmagic                              5.46-r2           apk
 libmd                                 1.1.0-r0          apk                           
 libmount                              2.41.2-r0         apk                           
 libncursesw                           6.5_p20251123-r0  apk                           
-libpng                                1.6.55-r0         apk                           
+libpng                                1.6.56-r0         apk                           
 libpq                                 18.3-r0           apk                           
 libproc2                              4.0.5-r0          apk                           
 libpsl                                0.21.5-r3         apk                           
