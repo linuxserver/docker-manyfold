@@ -44,6 +44,14 @@ RUN \
     postgresql-dev \
     ruby-dev \
     yaml-dev && \
+  apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community \
+    vtk && \
+  echo "**** install manyfold F3D package ****" && \
+  curl -s -o \
+    /tmp/f3d.apk -L \
+    "https://github.com/manyfold3d/f3d-alpine/releases/download/v3.5.0-r0/f3d-3.5.0-r0.x86_64.apk" && \
+  apk add --no-cache --allow-untrusted /tmp/f3d.apk && \
+  rm /tmp/f3d.apk && \
   echo "**** install manyfold ****" && \
   mkdir -p /app/www && \
   if [ -z ${MANYFOLD_VERSION+x} ]; then \
