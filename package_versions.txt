@@ -81,8 +81,8 @@ data_migrate                          11.3.1            gem
 date                                  3.4.1             gem                           
 date                                  3.5.1             gem                           
 delegate                              0.4.0             gem                           
-devise                                5.0.3             gem                           
-devise_invitable                      2.0.11            gem                           
+devise                                5.0.4             gem                           
+devise_invitable                      2.0.12            gem                           
 devise_zxcvbn                         6.0.0             gem                           
 did_you_mean                          2.0.0             gem                           
 digest                                3.2.0             gem                           
@@ -156,7 +156,7 @@ io-nonblock                           0.3.2             gem
 io-wait                               0.3.2             gem                           
 ipaddr                                1.2.7             gem                           
 irb                                   1.14.3            gem                           
-irb                                   1.17.0            gem                           
+irb                                   1.18.0            gem                           
 jbuilder                              2.14.1            gem                           
 jemalloc                              5.3.0-r6          apk                           
 jmespath                              1.6.2             gem                           
