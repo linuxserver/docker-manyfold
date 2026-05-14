@@ -145,11 +145,11 @@ i18n                                  1.14.8            gem
 i18n-js                               4.2.4             gem                           
 i18n_data                             1.1.0             gem                           
 image_processing                      1.14.0            gem                           
-imagemagick                           7.1.2.19-r0       apk                           
-imagemagick-heic                      7.1.2.19-r0       apk                           
-imagemagick-jpeg                      7.1.2.19-r0       apk                           
-imagemagick-libs                      7.1.2.19-r0       apk                           
-imagemagick-webp                      7.1.2.19-r0       apk                           
+imagemagick                           7.1.2.22-r0       apk                           
+imagemagick-heic                      7.1.2.22-r0       apk                           
+imagemagick-jpeg                      7.1.2.22-r0       apk                           
+imagemagick-libs                      7.1.2.22-r0       apk                           
+imagemagick-webp                      7.1.2.22-r0       apk                           
 io-console                            0.8.1             gem                           
 io-console                            0.8.2             gem                           
 io-nonblock                           0.3.2             gem                           
