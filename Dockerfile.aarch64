@@ -12,10 +12,13 @@ ENV RAILS_ENV="production" \
     NODE_ENV="production" \
     RACK_ENV="production" \
     DOCKER_TAG=lscr.io/linuxserver/manyfold:${VERSION} \
+    BUNDLE_SILENCE_ROOT_WARNING=true \
     PORT=3214 \
     RAILS_SERVE_STATIC_FILES=true \
     APP_VERSION=${MANYFOLD_VERSION} \
     HOME=/config
+
+COPY --from=ruby:3.4.8-alpine3.23 /usr/local /usr/local/
 
 RUN \
   apk add --no-cache \
@@ -30,9 +33,7 @@ RUN \
     libarchive \
     mariadb-connector-c \
     pciutils \
-    postgresql16-client \
-    ruby \
-    ruby-bundler && \
+    postgresql16-client && \
   apk add --no-cache --virtual=build-dependencies \
     build-base \
     git \
@@ -42,7 +43,6 @@ RUN \
     nodejs \
     npm \
     postgresql-dev \
-    ruby-dev \
     yaml-dev && \
   apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community \
     vtk && \
@@ -68,14 +68,12 @@ RUN \
     /app/www/ --strip-components=1 && \
   cd /app/www && \
   npm install -g corepack && \
-  corepack enable && \
+  corepack enable yarn && \
   yarn install && \
-  gem install foreman && \
-  RUBY=$(apk list ruby | grep -oP '.*-\K(\d\.\d\.\d)') && \
-  sed -i "s/\d.\d.\d/${RUBY}/" .ruby-version && \
+  gem install foreman bundler && \
   bundle config set --local deployment 'true' && \
   bundle config set --local without 'development test' && \
-  bundle config force_ruby_platform true && \
+  bundle config set force_ruby_platform true && \
   bundle install && \
   touch db/schema.rb && \
   DATABASE_URL="nulldb://user:pass@localhost/db" \
