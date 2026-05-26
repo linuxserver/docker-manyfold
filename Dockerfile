@@ -25,15 +25,18 @@ RUN \
     assimp-dev \
     file \
     gcompat \
+    gmp \
     imagemagick \
     imagemagick-heic \
     imagemagick-jpeg \
     imagemagick-webp \
     jemalloc \
     libarchive \
+    libucontext \
     mariadb-connector-c \
     pciutils \
-    postgresql16-client && \
+    postgresql16-client \
+    yaml && \
   apk add --no-cache --virtual=build-dependencies \
     build-base \
     git \
