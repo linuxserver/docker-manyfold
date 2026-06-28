@@ -76,7 +76,6 @@ RUN \
   gem install foreman bundler && \
   bundle config set --local deployment 'true' && \
   bundle config set --local without 'development test' && \
-  bundle config set force_ruby_platform true && \
   bundle install && \
   touch db/schema.rb && \
   DATABASE_URL="nulldb://user:pass@localhost/db" \
