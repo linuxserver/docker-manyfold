@@ -184,7 +184,7 @@ jemalloc                              5.3.0-r6          apk
 jmespath                              1.6.2             gem                           
 job-iteration                         1.15.0            gem                           
 jq                                    1.8.1-r0          apk                           
-json                                  2.19.9            gem                           
+json                                  2.20.0            gem                           
 json                                  2.9.1             gem                           
 json-canonicalization                 1.0.0             gem                           
 json-jwt                              1.17.0            gem                           
@@ -419,7 +419,7 @@ securerandom                          0.4.1             gem           (+1 duplic
 set                                   1.1.1             gem                           
 shadow                                4.18.0-r0         apk                           
 shellwords                            0.2.2             gem                           
-shrine                                3.7.1             gem                           
+shrine                                3.8.0             gem                           
 shrine-tus                            2.1.1             gem                           
 shrine-url                            2.4.1             gem                           
 sidekiq                               8.0.10            gem                           
