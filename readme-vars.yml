@@ -79,7 +79,7 @@ init_diagram: |
     svc-manyfold -> legacy-services
   }
   Base Images: {
-    "baseimage-alpine:3.23"
+    "baseimage-alpine:3.24"
   }
   "manyfold:latest" <- Base Images
 # changelog
