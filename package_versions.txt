@@ -58,7 +58,7 @@ browser                               6.2.0             gem
 builder                               3.3.0             gem                           
 bundler                               2.6.9             gem                           
 bundler                               4.0.14            gem                           
-bundler                               4.0.16            gem                           
+bundler                               4.0.17            gem                           
 busybox                               1.37.0-r31        apk                           
 busybox-binsh                         1.37.0-r31        apk                           
 c-ares                                1.34.8-r0         apk                           
