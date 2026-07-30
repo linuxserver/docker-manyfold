@@ -1,22 +1,22 @@
 NAME                                  VERSION           TYPE                         
-@rails/actiontext                     8.0.500           npm                           
+@rails/actiontext                     8.0.501           npm                           
 abbrev                                0.1.2             gem                           
 acl-libs                              2.3.2-r1          apk                           
-actioncable                           8.0.5             gem                           
-actionmailbox                         8.0.5             gem                           
-actionmailer                          8.0.5             gem                           
-actionpack                            8.0.5             gem                           
-actiontext                            8.0.5             gem                           
-actionview                            8.0.5             gem                           
-activejob                             8.0.5             gem                           
+actioncable                           8.0.5.1           gem                           
+actionmailbox                         8.0.5.1           gem                           
+actionmailer                          8.0.5.1           gem                           
+actionpack                            8.0.5.1           gem                           
+actiontext                            8.0.5.1           gem                           
+actionview                            8.0.5.1           gem                           
+activejob                             8.0.5.1           gem                           
 activejob-status                      1.0.2             gem                           
 activejob-uniqueness                  0.4.0             gem                           
-activemodel                           8.0.5             gem                           
-activerecord                          8.0.5             gem                           
+activemodel                           8.0.5.1           gem                           
+activerecord                          8.0.5.1           gem                           
 activerecord-enhancedsqlite3-adapter  0.8.0             gem                           
 activerecord-nulldb-adapter           1.2.2             gem                           
-activestorage                         8.0.5             gem                           
-activesupport                         8.0.5             gem                           
+activestorage                         8.0.5.1           gem                           
+activesupport                         8.0.5.1           gem                           
 acts-as-taggable-on                   13.0.0            gem                           
 acts_as_favoritor                     6.0.2             gem                           
 addressable                           2.9.0             gem                           
@@ -298,7 +298,7 @@ ncurses-terminfo-base                 6.6_p20260516-r0  apk
 net-ftp                               0.3.8             gem                           
 net-http                              0.6.0             gem           (+1 duplicate)  
 net-imap                              0.5.8             gem                           
-net-imap                              0.6.4.1           gem                           
+net-imap                              0.6.6             gem                           
 net-pop                               0.1.2             gem           (+1 duplicate)  
 net-protocol                          0.2.2             gem           (+1 duplicate)  
 net-smtp                              0.5.1             gem           (+1 duplicate)  
@@ -368,17 +368,17 @@ rack-proxy                            0.8.3             gem
 rack-session                          2.1.2             gem                           
 rack-test                             2.2.0             gem                           
 rackup                                2.3.1             gem                           
-rails                                 8.0.5             gem                           
+rails                                 8.0.5.1           gem                           
 rails-dom-testing                     2.3.0             gem                           
 rails-html-sanitizer                  1.7.1             gem                           
 rails-i18n                            8.0.1             gem                           
 rails-settings-cached                 2.9.6             gem                           
 rails_performance                     1.6.0             gem                           
-railties                              8.0.5             gem                           
+railties                              8.0.5.1           gem                           
 rake                                  13.2.1            gem                           
 rake                                  13.4.2            gem                           
 rbs                                   3.8.0             gem                           
-rbs                                   4.0.3             gem                           
+rbs                                   4.1.1             gem                           
 rdf                                   3.3.4             gem                           
 rdoc                                  6.14.0            gem                           
 rdoc                                  8.0.0             gem                           
