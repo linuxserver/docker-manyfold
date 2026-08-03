@@ -27,7 +27,7 @@ alpine-baselayout-data                3.7.2-r1          apk
 alpine-keys                           2.6-r0            apk                           
 alpine-release                        3.24.1-r0         apk                           
 altcha-rails                          0.1.0             gem                           
-apk-tools                             3.0.6-r0          apk                           
+apk-tools                             3.0.7-r0          apk                           
 arel_extensions                       2.4.0             gem                           
 assimp-dev                            6.0.4-r0          apk                           
 assimp-libs                           6.0.4-r0          apk                           
@@ -198,7 +198,7 @@ kaminari-core                         1.2.2             gem
 kramdown                              2.5.2             gem                           
 kramdown-parser-gfm                   1.1.0             gem                           
 lcms2                                 2.19-r0           apk                           
-libapk                                3.0.6-r0          apk                           
+libapk                                3.0.7-r0          apk                           
 libarchive                            3.8.7-r0          apk                           
 libattr                               2.5.2-r2          apk                           
 libblkid                              2.42.1-r0         apk                           
@@ -275,8 +275,8 @@ marcel                                1.2.1             gem
 mariadb-connector-c                   3.4.6-r0          apk                           
 matrix                                0.4.2             gem                           
 memo_wise                             1.13.0            gem                           
-mesa                                  26.1.1-r1         apk                           
-mesa-gl                               26.1.1-r1         apk                           
+mesa                                  26.1.6-r0         apk                           
+mesa-gl                               26.1.6-r0         apk                           
 mini_magick                           5.3.2             gem                           
 mini_mime                             1.1.5             gem                           
 minitest                              5.25.4            gem                           
