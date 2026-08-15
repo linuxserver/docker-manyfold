@@ -62,7 +62,7 @@ RUN \
   mkdir -p /app/www && \
   if [ -z ${MANYFOLD_VERSION+x} ]; then \
     MANYFOLD_VERSION=$(curl -sX GET "https://api.github.com/repos/manyfold3d/manyfold/releases/latest" \
-    | awk '/tag_name/{print $4;exit}' FS='[""]'); \
+    | jq -r '.tag_name'); \
   fi && \
   curl -sX GET "https://api.github.com/repos/manyfold3d/manyfold/git/matching-refs/tags/${MANYFOLD_VERSION}" \
     | jq -r '.[].object.sha' > /app/www/GIT_SHA && \
