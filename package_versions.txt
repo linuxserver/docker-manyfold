@@ -58,7 +58,7 @@ browser                               6.2.0             gem
 builder                               3.3.0             gem                           
 bundler                               2.6.9             gem                           
 bundler                               4.0.14            gem                           
-bundler                               4.0.18            gem                           
+bundler                               4.0.19            gem                           
 busybox                               1.37.0-r31        apk                           
 busybox-binsh                         1.37.0-r31        apk                           
 c-ares                                1.34.8-r0         apk                           
@@ -213,7 +213,7 @@ libdeflate                            1.25-r0           apk
 libdrm                                2.4.134-r0        apk                           
 libeconf                              0.8.3-r0          apk                           
 libelf                                0.195-r0          apk                           
-libexpat                              2.8.2-r0          apk                           
+libexpat                              2.8.3-r0          apk                           
 libffi                                3.5.2-r1          apk                           
 libgcc                                15.2.0-r5         apk                           
 libgomp                               15.2.0-r5         apk                           
@@ -429,7 +429,7 @@ singleton                             0.3.0             gem
 skalibs-libs                          2.15.0.0-r0       apk                           
 spdx                                  4.1.5             gem                           
 spirv-tools                           1.4.341.0-r0      apk                           
-sqlite-libs                           3.53.2-r0         apk                           
+sqlite-libs                           3.53.4-r0         apk                           
 sqlite3                               2.9.5             gem                           
 sqlite3_ar_regexp                     3.0.0             gem                           
 ssl_client                            1.37.0-r31        apk                           
