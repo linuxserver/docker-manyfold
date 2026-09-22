@@ -33,10 +33,10 @@ assimp-dev                            6.0.4-r0          apk
 assimp-libs                           6.0.4-r0          apk                           
 attr_required                         1.0.2             gem                           
 aws-eventstream                       1.4.0             gem                           
-aws-partitions                        1.1279.0          gem                           
-aws-sdk-core                          3.254.1           gem                           
-aws-sdk-kms                           1.130.0           gem                           
-aws-sdk-s3                            1.229.0           gem                           
+aws-partitions                        1.1287.0          gem                           
+aws-sdk-core                          3.257.0           gem                           
+aws-sdk-kms                           1.132.0           gem                           
+aws-sdk-s3                            1.232.1           gem                           
 aws-sigv4                             1.12.1            gem                           
 base64                                0.2.0             gem                           
 base64                                0.3.0             gem                           
@@ -65,7 +65,8 @@ c-ares                                1.34.8-r0         apk
 ca-certificates                       20260909-r0       apk                           
 ca-certificates-bundle                20260909-r0       apk                           
 catatonit                             0.2.1-r0          apk                           
-cgi                                   0.4.2             gem           (+1 duplicate)  
+cgi                                   0.4.2             gem                           
+cgi                                   0.5.2             gem                           
 chunky_png                            1.4.0             gem                           
 cocooned                              3.0.1             gem                           
 concurrent-ruby                       1.3.8             gem                           
@@ -93,7 +94,7 @@ devise_zxcvbn                         6.0.0             gem
 did_you_mean                          2.0.0             gem                           
 digest                                3.2.0             gem                           
 domain_name                           0.6.20240107      gem                           
-doorkeeper                            5.9.6             gem                           
+doorkeeper                            5.9.7             gem                           
 doorkeeper-i18n                       5.2.9             gem                           
 double-conversion                     3.4.0-r0          apk                           
 down                                  5.6.0             gem                           
@@ -112,13 +113,13 @@ et-orbi                               1.4.0             gem
 etc                                   1.4.6             gem                           
 eudev-libs                            3.2.14-r6         apk                           
 f3d                                   3.5.0-r0          apk                           
-faraday                               2.14.3            gem                           
+faraday                               2.14.4            gem                           
 faraday-follow_redirects              0.5.0             gem                           
 faraday-multipart                     1.2.0             gem                           
 faraday-net_http                      3.4.4             gem                           
 fasp_client                           0.6.0             gem                           
 fcntl                                 1.2.0             gem                           
-fedipub                               0.9.0             gem                           
+fedipub                               0.10.0            gem                           
 fedipub-moderation                    0.5.0             gem                           
 ffi                                   1.17.4            gem                           
 ffi-libarchive                        1.1.14            gem                           
@@ -132,7 +133,8 @@ findutils                             4.10.0-r1         apk
 fmt                                   11.2.0-r1         apk                           
 fontconfig                            2.17.1-r1         apk                           
 foreman                               0.90.0            gem                           
-forwardable                           1.3.3             gem           (+1 duplicate)  
+forwardable                           1.3.3             gem                           
+forwardable                           1.4.0             gem                           
 freeimage                             3.18.0-r5         apk                           
 freetype                              2.14.3-r0         apk                           
 fribidi                               1.0.16-r3         apk                           
@@ -171,7 +173,7 @@ imagemagick-tiff                      7.1.2.30-r0       apk
 imagemagick-webp                      7.1.2.30-r0       apk                           
 imath                                 3.2.2-r1          apk                           
 io-console                            0.8.1             gem                           
-io-console                            0.9.2             gem                           
+io-console                            0.9.4             gem                           
 io-nonblock                           0.3.2             gem                           
 io-wait                               0.3.2             gem                           
 ipaddr                                1.2.7             gem                           
@@ -180,7 +182,7 @@ irb                                   1.18.0            gem
 jbuilder                              2.15.1            gem                           
 jemalloc                              5.3.0-r6          apk                           
 jmespath                              1.6.2             gem                           
-job-iteration                         1.15.0            gem                           
+job-iteration                         1.15.1            gem                           
 jq                                    1.8.2-r0          apk                           
 json                                  2.21.2            gem                           
 json                                  2.9.1             gem                           
@@ -216,10 +218,10 @@ libffi                                3.5.2-r1          apk
 libgcc                                15.2.0-r5         apk                           
 libgomp                               15.2.0-r5         apk                           
 libharu                               2.4.6-r0          apk                           
-libheif                               1.23.0-r0         apk                           
-libheif-dav1d                         1.23.0-r0         apk                           
-libheif-jpeg                          1.23.0-r0         apk                           
-libheif-libde265                      1.23.0-r0         apk                           
+libheif                               1.23.4-r0         apk                           
+libheif-dav1d                         1.23.4-r0         apk                           
+libheif-jpeg                          1.23.4-r0         apk                           
+libheif-libde265                      1.23.4-r0         apk                           
 libidn2                               2.3.8-r0          apk                           
 libintl                               1.0-r0            apk                           
 libjpeg-turbo                         3.1.3-r0          apk                           
@@ -259,7 +261,7 @@ libxshmfence                          1.3.3-r0          apk
 libxxf86vm                            1.1.7-r0          apk                           
 link_header                           0.0.8             gem                           
 linux-pam                             1.7.1-r2          apk                           
-linzer                                0.7.7             gem                           
+linzer                                0.8.1             gem                           
 llhttp                                0.6.2             gem                           
 llvm22-libs                           22.1.3-r0         apk                           
 logger                                1.6.4             gem                           
@@ -284,7 +286,7 @@ mittsu                                0.5.0             gem
 mittsu-3mf                            0.1.0             gem                           
 mittsu-mesh_analysis                  0.1.0             gem                           
 msgpack                               1.8.4             gem                           
-multi_json                            1.21.1            gem                           
+multi_json                            1.21.2            gem                           
 multipart-post                        2.4.1             gem                           
 musl                                  1.2.6-r2          apk                           
 musl-obstack                          1.2.3-r2          apk                           
@@ -295,11 +297,13 @@ nanoid                                2.0.0             gem
 naturally                             2.3.0             gem                           
 ncurses-terminfo-base                 6.6_p20260516-r0  apk                           
 net-ftp                               0.3.8             gem                           
-net-http                              0.6.0             gem           (+1 duplicate)  
+net-http                              0.6.0             gem                           
+net-http                              0.9.1             gem                           
 net-imap                              0.5.8             gem                           
-net-imap                              0.6.6             gem                           
+net-imap                              0.6.7             gem                           
 net-pop                               0.1.2             gem           (+1 duplicate)  
-net-protocol                          0.2.2             gem           (+1 duplicate)  
+net-protocol                          0.2.2             gem                           
+net-protocol                          0.4.0             gem                           
 net-smtp                              0.5.1             gem           (+1 duplicate)  
 netcat-openbsd                        1.234.1-r0        apk                           
 netcdf                                4.10.0-r0         apk                           
@@ -322,7 +326,6 @@ openexr-libopenexr                    3.4.15-r0         apk
 openexr-libopenexrcore                3.4.15-r0         apk                           
 openid_connect                        2.3.0             gem                           
 openssl                               3.3.1             gem                           
-openssl                               3.3.2             gem                           
 openvdb                               13.0.0-r1         apk                           
 optparse                              0.6.0             gem                           
 orm_adapter                           0.5.0             gem                           
@@ -372,13 +375,13 @@ rails                                 8.0.5.1           gem
 rails-dom-testing                     2.3.0             gem                           
 rails-html-sanitizer                  1.7.1             gem                           
 rails-i18n                            8.0.1             gem                           
-rails-settings-cached                 2.9.6             gem                           
+rails-settings-cached                 2.10.0            gem                           
 rails_performance                     1.6.0             gem                           
 railties                              8.0.5.1           gem                           
 rake                                  13.2.1            gem                           
 rake                                  13.4.2            gem                           
 rbs                                   3.8.0             gem                           
-rbs                                   4.1.3             gem                           
+rbs                                   4.2.0             gem                           
 rdf                                   3.3.4             gem                           
 rdoc                                  6.14.0            gem                           
 rdoc                                  8.0.0             gem                           
@@ -437,7 +440,6 @@ stimulus-rails                        1.3.4             gem
 stopwords-filter2                     0.1.0             gem                           
 string-similarity                     2.1.0             gem                           
 stringio                              3.1.2             gem                           
-stringio                              3.2.0             gem                           
 strscan                               3.1.2             gem                           
 strscan                               3.1.8             gem                           
 swagger-ui-dist                       5.9.4             npm                           
