@@ -77,8 +77,3 @@ else
     printf "sqlite3:/config/manyfold.sqlite3" > /run/s6/container_environment/DATABASE_URL
     echo "**** Missing or invalid DATABASE_URL, defaulting to sqlite. ****"
 fi
-
-cd /app/www/ || exit 1
-
-echo "**** Running Manyfold database init. ****"
-s6-setuidgid abc bundle exec rails db:prepare:with_data

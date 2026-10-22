@@ -1,6 +1,13 @@
 #!/usr/bin/with-contenv bash
 # shellcheck shell=bash
 
+pushd /app/www/ || exit 1
+
+echo "**** Running Manyfold database init. ****"
+s6-setuidgid abc bundle exec rails db:prepare:with_data
+
+popd || exit 1
+
 exec \
     s6-notifyoncheck -d -n 300 -w 1000 -c "nc -z localhost 3214" \
         cd /app/www s6-setuidgid abc foreman start
