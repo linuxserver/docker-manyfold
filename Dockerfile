@@ -18,7 +18,7 @@ ENV RAILS_ENV="production" \
     APP_VERSION=${MANYFOLD_VERSION} \
     HOME=/config
 
-COPY --from=ruby:3.4.9-alpine3.24 /usr/local /usr/local/
+COPY --from=ruby:3.4.12-alpine3.24 /usr/local /usr/local/
 
 RUN \
   apk add --no-cache \
@@ -83,6 +83,7 @@ RUN \
   touch db/schema.rb && \
   DATABASE_URL="nulldb://user:pass@localhost/db" \
   SECRET_KEY_BASE="placeholder" \
+  RAILS_ASSETS_PRECOMPILE=1 \
   APP_VERSION=${MANYFOLD_VERSION} \
   bundle exec rake assets:precompile && \
   rm db/schema.rb && \
