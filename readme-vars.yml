@@ -84,6 +84,7 @@ init_diagram: |
   "manyfold:latest" <- Base Images
 # changelog
 changelogs:
+  - {date: "12.11.26:", desc: "Update Ruby to 3.4.12 and skip Redis access during asset precompile."}
   - {date: "05.07.26:", desc: "Rebase to Alpine 3.24."}
   - {date: "13.01.26:", desc: "Rebase to Alpine 3.23."}
   - {date: "08.10.25:", desc: "Change key init to auto generate and persist."}
