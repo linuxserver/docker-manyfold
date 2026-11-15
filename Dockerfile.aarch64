@@ -53,9 +53,8 @@ RUN \
     npm \
     postgresql-dev \
     yaml-dev && \
-  apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community \
-    draco && \
-  apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing \
+  apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/main --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing \
+    draco \
     f3d && \
   echo "**** install manyfold ****" && \
   mkdir -p /app/www && \
