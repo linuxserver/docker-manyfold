@@ -18,7 +18,7 @@ ENV RAILS_ENV="production" \
     APP_VERSION=${MANYFOLD_VERSION} \
     HOME=/config
 
-COPY --from=ruby:3.4.9-alpine3.24 /usr/local /usr/local/
+COPY --from=ruby:3.4.12-alpine3.24 /usr/local /usr/local/
 
 RUN \
   apk add --no-cache \
